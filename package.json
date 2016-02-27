@@ -1,19 +1,27 @@
 {
   "name": "wakate.org",
-  "version": "1.0.0",
   "description": "http://wakate.org",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.0",
+  "author": {
+    "name": "Masayuki IZUMI",
+    "email": "masayuki@izumin.info",
+    "url": "http://izumin.info/"
   },
+  "bugs": {
+    "url": "https://github.com/wakate/wakate.github.io/issues"
+  },
+  "homepage": "http://wakate.org",
+  "license": {
+    "type": "MIT",
+    "url": "http://izumin.mit-license.org/2016"
+  },
+  "main": "index.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wakate/wakate.github.io.git"
   },
-  "author": "izumin5210 <masayuki@izumin.info>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wakate/wakate.github.io/issues"
-  },
-  "homepage": "http://wakate.org"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
