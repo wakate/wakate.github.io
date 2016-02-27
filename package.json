@@ -1,0 +1,19 @@
+{
+  "name": "wakate.org",
+  "version": "1.0.0",
+  "description": "http://wakate.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wakate/wakate.github.io.git"
+  },
+  "author": "izumin5210 <masayuki@izumin.info>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wakate/wakate.github.io/issues"
+  },
+  "homepage": "http://wakate.org"
+}
