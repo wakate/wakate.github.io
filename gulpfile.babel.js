@@ -3,14 +3,18 @@ import loadPlugins  from "gulp-load-plugins";
 
 import del          from "del";
 import path         from "path";
+import browserSync  from "browser-sync";
 
 import config       from "./config";
 
 const $             = loadPlugins();
+const reload        = browserSync.reload;
 
 
 // ---- configurations ------------------------------------------------
-const dest          = path.join(__dirname, config.dest)
+const p             = path.join;
+const src           = path.join(__dirname, "source");
+const dest          = path.join(__dirname, config.dest);
 const stylesPath    = path.join.bind(__dirname, config.src.styles.dir);
 const styleFiles    = config.src.styles.entries.map(file => stylesPath(file));
 
@@ -39,7 +43,14 @@ gulp.task("clean", () => {
 
 // ---- build ------------------------------------------------
 gulp.task("watch", () => {
+  browserSync.init({
+    open: false,
+    proxy: "localhost:4567",
+    reloadDelay: 2000
+  });
+
   gulp.watch([stylesPath("**/*.scss")], ["build:scss"]);
+  gulp.watch([path.join(src, "**/*")], reload);
 });
 
 gulp.task("build", ["build:scss"]);
