@@ -1,3 +1,7 @@
+require 'json'
+
+config = JSON.parse(open('./config.json').read)
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -21,6 +25,12 @@ page '/*.txt', layout: false
 ###
 
 activate :directory_indexes
+
+activate :external_pipeline,
+  name: :gulp,
+  command: "$(npm bin)/gulp #{build? ? :build : :watch}",
+  source: config['dest'],
+  latency: 1
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
