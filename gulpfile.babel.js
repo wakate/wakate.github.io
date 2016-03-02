@@ -19,7 +19,9 @@ const dest          = path.join(__dirname, config.dest);
 const styleEntries  = config.src.styles.entries;
 const stylesPath    = path.join.bind(__dirname, config.src.styles.dir);
 const styleFiles    = styleEntries.map(file => stylesPath(file));
+const styleIncludePaths   = config.src.styles["include-paths"]
 const styleguideTemplate  = path.join(__dirname, config.src["styleguide-template"].dir)
+const fontPaths     = config.src.fonts.dirs.map(file => path.join(__dirname, file));
 
 const kssOpts = {
   source:       stylesPath(),
@@ -55,7 +57,7 @@ gulp.task("build:scss", () => {
       }
     }))
     .pipe($.sassGlob())
-    .pipe($.sass())
+    .pipe($.sass({includePaths: styleIncludePaths}))
     .pipe(gulp.dest(dest));
 });
 
@@ -63,6 +65,11 @@ gulp.task("build:scss", () => {
 // ---- misc ------------------------------------------------
 gulp.task("clean", () => {
   del([dest], { dot: true });
+});
+
+gulp.task("copy:fonts", () => {
+  return gulp.src(fontPaths.map(p => path.join(p, "**/*")))
+    .pipe(gulp.dest(path.join(dest, "fonts")));
 });
 
 
@@ -78,4 +85,4 @@ gulp.task("watch", () => {
   gulp.watch([path.join(src, "**/*")], reload);
 });
 
-gulp.task("build", ["build:scss", "build:styleguide"]);
+gulp.task("build", ["build:scss", "build:styleguide", "copy:fonts"]);

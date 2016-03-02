@@ -4,10 +4,19 @@
       "dir": "source/assets/styles",
       "entries": [
         "style.scss"
+      ],
+      "include-paths": [
+        "node_modules/font-awesome/scss",
+        "node_modules/normalize.css"
       ]
     },
     "styleguide-template": {
       "dir": "source/assets/styleguide-template"
+    },
+    "fonts": {
+      "dirs": [
+        "node_modules/font-awesome/fonts"
+      ]
     }
   },
   "dest": ".tmp"
