@@ -21,6 +21,8 @@
     "gulp-sass": "^2.2.0",
     "gulp-sass-glob": "0.0.8",
     "gulp-sass-lint": "^1.1.1",
+    "gulp-shell": "^0.5.2",
+    "kss": "^2.4.0",
     "path": "^0.12.7"
   },
   "homepage": "http://wakate.org",
