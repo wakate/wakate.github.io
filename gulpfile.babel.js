@@ -29,6 +29,12 @@ gulp.task("lint:scss", () => {
 
 gulp.task("build:scss", () => {
   return gulp.src(styleFiles)
+    .pipe($.plumber({
+      errorHandler: function(e) {
+        console.log(e.messageFormatted);
+        this.emit('end');
+      }
+    }))
     .pipe($.sassGlob())
     .pipe($.sass())
     .pipe(gulp.dest(dest));
