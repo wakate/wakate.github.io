@@ -1,0 +1,63 @@
+$body-color:  $gray-dark;
+$body-bg:     white;
+
+// Spacing      --------------------------------
+
+$spacer:            1rem;
+
+
+// Typography   --------------------------------
+
+$font-family-base: Hiragino Sans,
+                   "ヒラギノ角ゴシック",
+                   Hiragino Kaku Gothic ProN,
+                   "ヒラギノ角ゴ ProN W3",
+                   Roboto,
+                   "Droid Sans",
+                   YuGothic,
+                   "游ゴシック",
+                   Meiryo,
+                   "メイリオ",
+                   Verdana,
+                   "ＭＳ Ｐゴシック",
+                   sans-serif;
+
+$font-size-root: 16px;
+
+$font-size-base: 1.00rem;
+$font-size-lg:   1.25rem;
+$font-size-sm:   0.875rem;
+
+$line-height-base: 1.5;
+
+$font-size-h1:  2.50rem;
+$font-size-h2:  2.00rem;
+$font-size-h3:  1.75rem;
+$font-size-h4:  1.50rem;
+$font-size-h5:  1.25rem;
+$font-size-h6:  1.00rem;
+
+
+// Headings     --------------------------------
+
+$headings-margin-bottom:  ($spacer / 2);
+$headings-font-family:    inherit;
+$headings-font-weight:    500;
+$headings-line-height:    1.1;
+$headings-color:           inherit;
+
+
+// Link         --------------------------------
+
+$link-color:            $brand-blue;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+// Blockquote   --------------------------------
+
+$blockquote-margin:   $spacer 0;
+$blockquote-padding:  $spacer $spacer*2;
+$blockquote-border:   $spacer / 2 solid $gray-lightest;
+$blockquote-bg:       $gray-lightest;
