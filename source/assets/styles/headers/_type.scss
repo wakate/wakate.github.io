@@ -1,0 +1,209 @@
+// Typography
+//
+// Styleguide 1-type
+
+// Headings
+//
+// Markup:
+// <h1>Heading Level 1</h1>
+// <h2>Heading Level 2</h2>
+// <h3>Heading Level 3</h3>
+// <h4>Heading Level 4</h4>
+// <h5>Heading Level 5</h5>
+// <h6>Heading Level 6</h6>
+//
+// Styleguide 1-type.1-headings
+@mixin heading($font-size) {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-size: $font-size;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+@mixin h1 {
+  @include heading($font-size-h1);
+}
+
+@mixin h2 {
+  @include heading($font-size-h2);
+}
+
+@mixin h3 {
+  @include heading($font-size-h3);
+}
+
+@mixin h4 {
+  @include heading($font-size-h4);
+}
+
+@mixin h5 {
+  @include heading($font-size-h5);
+}
+
+@mixin h6 {
+  @include heading($font-size-h6);
+}
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+h6 { @include h6; }
+
+
+// Paragraph
+//
+// Markup:
+// <p>
+//   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//   Nam Pyrrho, Aristo, Erillus iam diu abiecti.
+//   Ipse Epicurus fortasse redderet, ut [redacted]tus Peducaeus, [redacted].
+//   Nemo nostrum istius generis asotos iucunde putat vivere.
+// </p>
+// <p>
+//   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+// </p>
+// <p>
+//   An me, inquis, tam amentem putas,
+//   ut apud imperitos isto modo loquar? Scientiam pollicentur,
+//   quam non erat mirum sapientiae cupido patria esse cariorem.
+//   Sed in rebus apertissimis nimium longi sumus.
+// </p>
+//
+// Styleguide 1-type.2-paragraph
+
+// Inline text elemetns
+//
+// Styleguide 1-type.3-inline
+
+// Link text
+//
+// Markup:
+// <a href="#">wakate.org Styleguide</a>
+//
+// Styleguide 1-type.3-inline.1-link
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+// Deleted text
+//
+// Markup:
+// <del>This line of text is meant to be treated as deleted text.</del>
+//
+// Styleguide 1-type.3-inline.2-del
+
+// Small text
+//
+// Markup:
+// <small>This line of text is rendered as small text.</small>
+//
+// Styleguide 1-type.3-inline.3-small
+@mixin small {
+  font-size: $font-size-sm;
+  font-weight: normal;
+}
+
+small {
+  @include small;
+}
+
+// Bold text
+//
+// Markup:
+// The following snippet of text is <strong>rendered as bold text</strong>.
+//
+// Styleguide 1-type.3-inline.4-strong
+
+// Blockquotes
+//
+// Styleguide 1-type.4-quotes
+
+// Default blockquotes
+//
+// Markup:
+// <blockquote>
+//   <p>
+//     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//     Ita cum ea volunt retinere, quae superiori sententiae conveniunt.
+//   </p>
+// </blockquote>
+//
+// Styleguide 1-type.4-quotes.1-default
+@mixin blockquote {
+  @extend .fa-quote-left;
+  position: relative;
+  /* background-color: $blockquote-bg; */
+  padding: $blockquote-padding;
+  margin: $blockquote-margin;
+  border-left: $blockquote-border;
+
+  &:before {
+    @extend .fa;
+    @extend .fa-4x;
+    position: absolute;
+    top: 0;
+    color: $blockquote-bg;
+  }
+
+  * {
+    position: relative;
+  }
+}
+
+blockquote {
+  @include blockquote;
+}
+
+
+// List
+//
+// Styleguide 1-type.5-list
+
+// Unordered
+//
+// Markup:
+// <ul>
+//   <li>Lorem ipsum dolor sit amet</li>
+//   <li>Consectetur adipiscing elit.
+//     <ul>
+//        <li>Si alia sentit</li>
+//        <li>Inquam</li>
+//        <li>Alia</li>
+//        <li>Loquitur</li>
+//     </ul>
+//   </li>
+//   <li>Numquam intellegam quid sentiat</li>
+//   <li>Consequens enim est et post oritur</li>
+// </ul>
+// 
+// Styleguide 1-type.5-list.1-unordered
+
+// Ordered
+//
+// Markup:
+// <ol>
+//   <li>Lorem ipsum dolor sit amet</li>
+//   <li>Consectetur adipiscing elit.
+//     <ol>
+//        <li>Si alia sentit</li>
+//        <li>Inquam</li>
+//        <li>Alia</li>
+//        <li>Loquitur</li>
+//     </ol>
+//   </li>
+//   <li>Numquam intellegam quid sentiat</li>
+//   <li>Consequens enim est et post oritur</li>
+// </ol>
+// 
+// Styleguide 1-type.5-list.2-ordered
