@@ -5,6 +5,9 @@
       "entries": [
         "style.scss"
       ]
+    },
+    "styleguide-template": {
+      "dir": "source/assets/styleguide-template"
     }
   },
   "dest": ".tmp"
