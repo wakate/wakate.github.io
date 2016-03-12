@@ -114,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  haml
   middleman
   middleman-blog
   redcarpet

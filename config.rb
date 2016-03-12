@@ -6,6 +6,8 @@ config = JSON.parse(open('./config.json').read)
 # Page options, layouts, aliases and proxies
 ###
 
+set :haml, { ugly: true, format: :html5 }
+
 # Per-page layout changes:
 #
 # With no layout

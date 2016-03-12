@@ -6,3 +6,5 @@ gem "middleman-blog"
 gem 'redcarpet'
 
 gem "builder"
+
+gem "haml"
