@@ -3,8 +3,10 @@
   %head
     = partial 'partials/head'
   %body
-    %header
+    %header.global-header
       %h1
+        %a(href="//wakate.org")
+          = image_tag "logo-light-horizontal.png", alt: "情報科学若手の会"
     #main(role="main")
       %article.post
         .post-header

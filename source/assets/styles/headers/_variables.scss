@@ -1,7 +1,8 @@
 $body-color:  $gray-dark;
 $body-bg:     $brand-gradient-light;
 
-$shadow-color: rgba($gray-dark, .4);
+$shadow-color:    rgba($gray-dark, .4);
+$default-shadow:  1px 1px 1px $shadow-color;
 
 // https://github.com/twbs/bootstrap/blob/fcb41c7afddc60e65218eaa7d4c95a76bc22380d/scss/_variables.scss#L131-L140
 $container-max-widths: (
@@ -80,6 +81,6 @@ $blockquote-bg:       $gray-lightest;
 // Card         --------------------------------
 
 $default-card-bg:             white;
-$default-card-shadow:         1px 1px 1px $shadow-color;
+$default-card-shadow:         $default-shadow;
 $default-card-border-radius:  3px;
 $default-card-padding:        16px;

@@ -1,0 +1,15 @@
+.global-header {
+  margin-bottom: 32px;
+  background: $brand-gradient-dark;
+  box-shadow: $default-shadow;
+
+  h1 {
+    @include container;
+    margin-top: 0;
+    padding: 32px;
+
+    a {
+      display: block;
+    }
+  }
+}
