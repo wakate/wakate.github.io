@@ -11,6 +11,7 @@
   h6 { @include md-h6($text-color, $decoration-color); }
   strong { @include md-strong($text-color, $accent-color); }
   ul { @include md-ul($text-color, $decoration-color); }
+  ol { @include md-ol($text-color, $decoration-color); }
 }
 
 @mixin md-h1(
@@ -77,7 +78,28 @@
   $text-color,
   $decoration-color
 ) {
+  list-style: none;
+  padding: 0;
+
   > li {
     @include before-text('-', .5rem, $decoration-color);
   }
 }
+
+@mixin md-ol(
+  $text-color,
+  $decoration-color
+) {
+  list-style: none;
+  padding: 0;
+  counter-reset: section;
+
+  li {
+    &:before {
+      color: $decoration-color;
+      counter-increment: section;
+      content: counters(section, ".") ". ";
+    }
+  }
+}
+
