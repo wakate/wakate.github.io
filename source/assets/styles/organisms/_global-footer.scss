@@ -1,0 +1,9 @@
+.global-footer {
+  @include container;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  .copyright {
+    text-align: center;
+  }
+}

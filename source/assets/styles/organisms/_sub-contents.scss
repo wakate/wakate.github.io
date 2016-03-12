@@ -1,0 +1,19 @@
+.sub-contents {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-top: 32px;
+  color: white;
+  background: linear-gradient(0deg, $gray-dark, lighten($gray-dark, 5%));
+
+  .post-groups {
+    @include container;
+    @include markdown(white, $brand-pink, $gray-light);
+    display: flex;
+    justify-content: space-around;
+
+    .post-group {
+      flex: 1 1 auto;
+    }
+  }
+}
