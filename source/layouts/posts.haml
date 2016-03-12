@@ -3,7 +3,7 @@
   %head
     = partial 'partials/head'
   %body
-    %header.global-header
+    %header.global-header(role="banner")
       %h1
         %a(href="//wakate.org")
           = image_tag "logo-light-horizontal.png", alt: "情報科学若手の会"
@@ -16,7 +16,7 @@
               = current_article.date.strftime("%Y/%m/%d")
         .post-body
           = yield
-    %aside.sub-contents
+    %aside.sub-contents(role="complementary")
       .post-groups
         %aside.post-group
           %h2 Recent Articles
@@ -35,7 +35,7 @@
           %ol
             - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
               %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
-    %footer.global-footer
+    %footer.global-footer(role="contentinfo")
       .copyright
         &copy;
         %a(href="//wakate.org")情報科学若手の会
