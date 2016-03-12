@@ -1,0 +1,28 @@
+@mixin post-header(
+  $text-color:      $gray-dark,
+  $accent-color:    $brand-blue,
+  $post-title-font-size: $display4-size
+) {
+  position: relative;
+
+  &:before {
+    @include size($post-title-font-size);
+    position: absolute;
+    content: '';
+    background-color: $accent-color;
+    border-radius: 3px;
+  }
+
+  .post-title,
+  .post-meta {
+    margin-left: $post-title-font-size * 1.5;
+  }
+
+  .post-title {
+    @include post-title($text-color, $accent-color, $post-title-font-size);
+  }
+
+  .post-meta {
+    color: $gray-light;
+  }
+}

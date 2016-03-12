@@ -1,0 +1,12 @@
+.post {
+  @include card(white, 16px 32px);
+  @include container;
+
+  .post-header {
+    @include post-header;
+  }
+
+  .post-body {
+    @include markdown;
+  }
+}
