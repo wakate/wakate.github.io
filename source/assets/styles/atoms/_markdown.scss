@@ -1,0 +1,83 @@
+@mixin markdown(
+  $text-color:        $gray-dark,
+  $accent-color:      $brand-pink,
+  $decoration-color:  $gray-light
+) {
+  h1 { @include md-h1($text-color, $decoration-color); }
+  h2 { @include md-h2($text-color, $decoration-color); }
+  h3 { @include md-h3($text-color, $decoration-color); }
+  h4 { @include md-h4($text-color, $decoration-color); }
+  h5 { @include md-h5($text-color, $decoration-color); }
+  h6 { @include md-h6($text-color, $decoration-color); }
+  strong { @include md-strong($text-color, $accent-color); }
+  ul { @include md-ul($text-color, $decoration-color); }
+}
+
+@mixin md-h1(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('#', .5rem, $decoration-color);
+  color: $text-color;
+  border-bottom: 1px solid $decoration-color;
+  padding: 0px 4px 4px;
+}
+
+@mixin md-h2(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('##', .5rem, $decoration-color);
+  color: $text-color;
+}
+
+@mixin md-h3(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('###', .5rem, $decoration-color);
+  color: $text-color;
+}
+
+@mixin md-h4(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('####', .5rem, $decoration-color);
+  color: $text-color;
+}
+
+@mixin md-h5(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('#####', .5rem, $decoration-color);
+  color: $text-color;
+}
+
+@mixin md-h6(
+  $text-color,
+  $decoration-color
+) {
+  @include before-text('#######', .5rem, $decoration-color);
+  color: $text-color;
+}
+
+@mixin md-strong(
+  $text-color,
+  $accent-color
+) {
+  position: relative;
+  color: $text-color;
+
+  background: linear-gradient(transparent 60%, $accent-color 60%);
+}
+
+@mixin md-ul(
+  $text-color,
+  $decoration-color
+) {
+  > li {
+    @include before-text('-', .5rem, $decoration-color);
+  }
+}

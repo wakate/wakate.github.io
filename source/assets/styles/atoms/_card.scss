@@ -1,0 +1,11 @@
+@mixin card(
+  $card-bg:             $default-card-bg,
+  $card-padding:        $default-card-padding,
+  $card-border-radius:  $default-card-border-radius,
+  $card-shadow:         $default-card-shadow
+) {
+  background-color: $card-bg;
+  padding: $card-padding;
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+}

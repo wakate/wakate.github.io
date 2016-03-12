@@ -1,0 +1,10 @@
+@mixin post-title(
+  $text-color:      $gray-dark,
+  $accent-color:    $brand-blue,
+  $post-title-font-size: $display4-size
+) {
+  color: $text-color;
+  font-size: $post-title-font-size;
+  font-weight: normal;
+}
+

@@ -75,3 +75,11 @@ $blockquote-margin:   $spacer 0;
 $blockquote-padding:  $spacer $spacer*2;
 $blockquote-border:   $spacer / 2 solid $gray-lightest;
 $blockquote-bg:       $gray-lightest;
+
+
+// Card         --------------------------------
+
+$default-card-bg:             white;
+$default-card-shadow:         1px 1px 1px $shadow-color;
+$default-card-border-radius:  3px;
+$default-card-padding:        16px;
