@@ -1,5 +1,16 @@
-$brand-blue:    #81cee2;
-$brand-green:   #ace5ac;
+$brand-blue:  #81cee2;
+$brand-green: #ace5ac;
+$brand-pink:   #f291b9;
+
+$brand-blue-dark:   shade($brand-blue, 50%);
+$brand-blue-light:  tint($brand-blue, 50%);
+$brand-green-dark:  shade($brand-green, 50%);
+$brand-green-light: tint($brand-green, 50%);
+
+$brand-gradient-angle:  135deg;
+$brand-gradient:        linear-gradient($brand-gradient-angle, $brand-blue, $brand-green);
+$brand-gradient-dark:   linear-gradient($brand-gradient-angle, $brand-blue-dark, $brand-green-dark);
+$brand-gradient-light:  linear-gradient($brand-gradient-angle, $brand-blue-light, $brand-green-light);
 
 $gray-dark:     #333;
 $gray:          #666;

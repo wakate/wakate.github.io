@@ -1,5 +1,15 @@
 $body-color:  $gray-dark;
-$body-bg:     white;
+$body-bg:     $brand-gradient-light;
+
+$shadow-color: rgba($gray-dark, .4);
+
+// https://github.com/twbs/bootstrap/blob/fcb41c7afddc60e65218eaa7d4c95a76bc22380d/scss/_variables.scss#L131-L140
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+);
 
 // Spacing      --------------------------------
 
@@ -22,21 +32,25 @@ $font-family-base: Hiragino Sans,
                    "ＭＳ Ｐゴシック",
                    sans-serif;
 
-$font-size-root: 16px;
+$font-size-root: 12px;
 
 $font-size-base: 1.00rem;
 $font-size-lg:   1.25rem;
 $font-size-sm:   0.875rem;
 
-$line-height-base: 1.5;
+$line-height-base: 2;
 
-$font-size-h1:  2.50rem;
-$font-size-h2:  2.00rem;
-$font-size-h3:  1.75rem;
-$font-size-h4:  1.50rem;
-$font-size-h5:  1.25rem;
+$font-size-h1:  1.50rem;
+$font-size-h2:  1.40rem;
+$font-size-h3:  1.30rem;
+$font-size-h4:  1.20rem;
+$font-size-h5:  1.10rem;
 $font-size-h6:  1.00rem;
 
+$display1-size: 4.0rem;
+$display2-size: 3.0rem;
+$display3-size: 2.0rem;
+$display4-size: 1.75rem;
 
 // Headings     --------------------------------
 
