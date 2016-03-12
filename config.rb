@@ -7,6 +7,7 @@ config = JSON.parse(open('./config.json').read)
 ###
 
 set :haml, { ugly: true, format: :html5 }
+set :images_dir, '/assets/images'
 
 # Per-page layout changes:
 #
