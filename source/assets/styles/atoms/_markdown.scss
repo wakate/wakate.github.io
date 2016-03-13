@@ -1,6 +1,6 @@
 @mixin markdown(
   $text-color:        $gray-dark,
-  $accent-color:      $brand-pink,
+  $accent-color:      $brand-yellow,
   $decoration-color:  $gray-light
 ) {
   h1 { @include md-h1($text-color, $decoration-color); }
