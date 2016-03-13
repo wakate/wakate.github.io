@@ -68,10 +68,10 @@
   $text-color,
   $accent-color
 ) {
-  position: relative;
+  display: inline-block;
   color: $text-color;
 
-  background: linear-gradient(transparent 60%, $accent-color 60%);
+  background: linear-gradient(transparent 40%, $accent-color 40%);
 }
 
 @mixin md-ul(
