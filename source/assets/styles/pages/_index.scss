@@ -1,0 +1,23 @@
+.jumbotron {
+  background: url('./assets/images/bg-top.png') no-repeat;
+  background-size: cover;
+  margin-bottom: 32px;
+  padding: 120px 0 240px;
+  box-shadow: $default-shadow;
+
+  h1 { margin: 0; }
+
+  img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .lead {
+    color: $white;
+    margin: 80px auto 0;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2.5;
+  }
+}
