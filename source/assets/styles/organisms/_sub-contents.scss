@@ -1,7 +1,5 @@
 .sub-contents {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+  padding: 32px 16px;
   margin-top: 32px;
   color: white;
   background: linear-gradient(0deg, $gray-dark, lighten($gray-dark, 5%));
@@ -10,6 +8,7 @@
     @include container;
     @include markdown(white, $brand-yellow, $gray-light);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     .post-group {
