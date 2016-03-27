@@ -16,27 +16,6 @@
               = current_article.date.strftime("%Y/%m/%d")
         .post-body
           = yield
-    %aside.sub-contents(role="complementary")
-      .post-groups
-        %aside.post-group
-          %h2 Recent Articles
-          %ol
-            - blog.articles[0...10].each do |article|
-              %li
-                = link_to article.title, article
-                %span= article.date.strftime('%b %e')
-        %aside.post-group
-          %h2 Tags
-          %ul
-            - blog.tags.each do |tag, articles|
-              %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-        %aside.post-group
-          %h2 By Year
-          %ol
-            - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-              %li= link_to "#{year} (#{articles.size})", blog_year_path(year)
-    %footer.global-footer(role="contentinfo")
-      .copyright
-        &copy;
-        %a(href="//wakate.org")情報科学若手の会
-        2016
+
+    = partial "partials/sub-contents", locals: { articles: blog.articles[0...10], tags: blog.tags }
+    = partial "partials/footer"
