@@ -65,8 +65,6 @@ activate :deploy do |deploy|
   deploy.branch = :master
 end
 
-end
-
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
