@@ -60,6 +60,11 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = :master
+end
+
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
@@ -76,8 +81,13 @@ page "/feed.xml", layout: false
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  # TODO: styleguilde系のファイルが残っててつらい
+  ignore "/styleguide/**/*"
+  ignore "/assets/styleguide-template/**/*"
+  ignore "/assets/styles/**/*"
 end
