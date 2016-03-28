@@ -60,6 +60,13 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch = :master
+end
+
+end
+
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
