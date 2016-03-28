@@ -1,0 +1,19 @@
+%aside.sub-contents(role="complementary")
+  .post-groups
+    %aside.post-group
+      %h2 Recent Articles
+      %ol
+        - articles.each do |article|
+          %li
+            = link_to article.title, article
+            %span= article.date.strftime('%b %e')
+    %aside.post-group
+      %h2 Tags
+      %ul
+        - tags.each do |tag, articles|
+          %li= link_to "#{tag} (#{articles.size})", tag_path(tag)
+    %aside.post-group
+      %h2 By Year
+      %ol
+        - articles.group_by {|a| a.date.year }.each do |year, articles|
+          %li= link_to "#{year} (#{articles.size})", blog_year_path(year)

@@ -1,10 +1,12 @@
 @mixin card(
   $card-bg:             $default-card-bg,
+  $card-margin:         $default-card-margin,
   $card-padding:        $default-card-padding,
   $card-border-radius:  $default-card-border-radius,
   $card-shadow:         $default-card-shadow
 ) {
   background-color: $card-bg;
+  margin: $card-margin;
   padding: $card-padding;
   border-radius: $card-border-radius;
   box-shadow: $card-shadow;
