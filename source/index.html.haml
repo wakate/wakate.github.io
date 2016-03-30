@@ -15,21 +15,5 @@ per_page: 10
     インフォーマルな雰囲気ですので、これから研究を始めるという方も是非ご参加下さい。
 
 #main(role="main")
-  - if paginate && num_pages > 1
-    %p Page #{page_number} of #{num_pages}
+  = partial "partials/posts", locals: { articles: page_articles }
 
-    - if prev_page
-      %p = link_to 'Previous page', prev_page
-
-  - page_articles.each_with_index do |article, i|
-    %article.post
-      .post-header
-        %h2.post-title= article.title
-        .post-meta
-          %span= article.date.strftime("%Y/%m/%d")
-      .post-body
-        = truncate(strip_tags(article.body), length: 400, omission: " #{link_to '...続きを読む', article}")
-
-  - if paginate
-    - if next_page
-      %p = link_to 'Next page', next_page
