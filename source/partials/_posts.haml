@@ -1,0 +1,8 @@
+- articles.each_with_index do |article, i|
+  %article.post
+    .post-header
+      %h2.post-title= article.title
+      .post-meta
+        %span= article.date.strftime("%Y/%m/%d")
+    .post-body
+      = truncate(strip_tags(article.body), length: 400, omission: " #{link_to '...続きを読む', article}")
