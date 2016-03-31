@@ -1,0 +1,17 @@
+.pagination {
+  @include card;
+  @include container;
+
+  text-align: center;
+
+  .btn-pagination {
+  }
+
+  .btn-pagination-disabled {
+    visibility: hidden;
+  }
+
+  .page-count {
+    padding: 0 16px;
+  }
+}

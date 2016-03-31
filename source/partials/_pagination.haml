@@ -1,0 +1,6 @@
+- if paginate
+  .pagination
+    = link_to '<< Prev page', prev_page, class: "btn-pagination#{'-disabled' unless prev_page}"
+    %span.page-count
+      #{page_number} / #{num_pages}
+    = link_to 'Next page >>', next_page, class: "btn-pagination#{'-disabled' unless next_page}"
