@@ -64,7 +64,7 @@ $headings-color:           inherit;
 
 // Link         --------------------------------
 
-$link-color:            $brand-blue;
+$link-color:            darken($brand-blue, 15%);
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
