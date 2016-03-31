@@ -1,0 +1,17 @@
+.breadcrumbs {
+  @include card;
+  @include container;
+
+  > ul {
+    > li {
+      display: inline-block;
+
+      &:not(:last-child) {
+        &:after {
+          content: '/';
+          padding: 0 8px;
+        }
+      }
+    }
+  }
+}
