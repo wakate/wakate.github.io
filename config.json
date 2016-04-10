@@ -19,5 +19,6 @@
       ]
     }
   },
-  "dest": ".tmp"
+  "dest": ".tmp",
+  "build": "build"
 }
