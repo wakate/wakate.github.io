@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -ev
+
 if  [ -z "$GIT_USER" ]; then
     echo "GIT_USER has not existed."
     exit 1
