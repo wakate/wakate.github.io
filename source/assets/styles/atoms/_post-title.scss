@@ -3,8 +3,15 @@
   $accent-color:    $brand-blue,
   $post-title-font-size: $display4-size
 ) {
-  color: $text-color;
-  font-size: $post-title-font-size;
-  font-weight: normal;
+  a {
+    display: block;
+    color: $text-color;
+    font-size: $post-title-font-size;
+    font-weight: normal;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 

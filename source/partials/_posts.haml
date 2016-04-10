@@ -1,7 +1,8 @@
 - articles.each_with_index do |article, i|
   %article.post
     .post-header
-      %h2.post-title= article.title
+      %h2.post-title
+        =link_to article.title, article
       .post-meta
         %span= article.date.strftime("%Y/%m/%d")
     .post-body
