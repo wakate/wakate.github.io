@@ -11,6 +11,8 @@ before_install:
 - rvm use 2.2.2
 - gem install bundler
 - bundle install --path vendor/bundle
+before_deploy:
+- chmod +x ./scripts/deploy.sh
 deploy:
   provider: script
   script: ./scripts/deploy.sh
