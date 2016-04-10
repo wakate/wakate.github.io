@@ -14,5 +14,5 @@
         .post-body
           = yield
 
-    = partial "partials/sub-contents", locals: { articles: blog.articles[0...10], tags: blog.tags }
+    = partial "partials/sub-contents"
     = partial "partials/footer"
