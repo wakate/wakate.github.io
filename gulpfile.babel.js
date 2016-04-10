@@ -16,6 +16,7 @@ const reload        = browserSync.reload;
 const p             = path.join;
 const src           = path.join(__dirname, "source");
 const dest          = path.join(__dirname, config.dest);
+const buildDir      = path.join(__dirname, config.build);
 const styleEntries  = config.src.styles.entries;
 const stylesPath    = path.join.bind(__dirname, config.src.styles.dir);
 const styleFiles    = styleEntries.map(file => stylesPath(file));
@@ -29,6 +30,10 @@ const kssOpts = {
   mask:         '"*.scss"',
   template:     styleguideTemplate,
   css:          styleEntries.map((entry) => `/${entry.replace(/\.scss$/, ".css")}`)
+};
+
+const deployOpts = {
+  branch: "master"
 };
 
 
@@ -86,3 +91,8 @@ gulp.task("watch", () => {
 });
 
 gulp.task("build", ["build:scss", "build:styleguide", "copy:fonts"]);
+
+gulp.task("deploy", () => {
+  return gulp.src(path.join(buildDir, "**/*"))
+    .pipe($.ghPages(deployOpts));
+});

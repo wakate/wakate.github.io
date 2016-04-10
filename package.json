@@ -42,6 +42,7 @@
     "url": "git+https://github.com/wakate/wakate.github.io.git"
   },
   "scripts": {
+    "deploy": "gulp deploy",
     "test": "echo \"no tests\""
   }
 }
