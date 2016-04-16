@@ -21,6 +21,6 @@ gem install bundler
 bundle install
 
 bundle exec middleman build
-npm run deploy
+bundle exec middleman deploy
 
 rm ~/.git-credentials
