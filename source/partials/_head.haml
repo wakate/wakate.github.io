@@ -2,7 +2,26 @@
 %meta(http-equiv='X-UA-Compatible' content='IE=edge;chrome=1')
 %meta(name="viewport" content="width=device-width, initial-scale=1")
 
-%title #{"#{current_article.title} | " unless current_article.nil?}情報科学若手の会
+- site_name = "情報科学若手の会"
+- title = "#{"#{current_article.title} | " unless current_article.nil?}#{site_name}"
+- description = "情報科学若手の会は、情報科学に携わる学生、若手研究者、 社会人のディスカッションと交流の会です。幅広い分野から参加者を募り、 互いの交流を深めることで新たな発想が生まれることを目指しています。インフォーマルな雰囲気ですので、これから研究を始めるという方も是非ご参加下さい。"
+- keywords = []
+
+%title= title
+
+%meta(name="description" content="#{description}")
+%meta(name="keywords" content="#{keywords.join(', ')}")
+
+%meta(property="og:type" content="article")
+%meta(property="og:title" content="#{title}")
+%meta(property="og:description" content="#{description}")
+%meta(property="og:image" content="//wakate.org/assets/images/og-image.png")
+%meta(property="og:url" content="//wakate.org/#{current_page.url}")
+%meta(property="og:site_name" content="#{site_name}")
+%meta(property="og:locale" content="ja_JP")
+
+%meta(name="twitter:card" content="summary")
+%meta(name="twitter:site" content="@is_wakate")
 
 = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
 
