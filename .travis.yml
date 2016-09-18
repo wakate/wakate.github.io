@@ -2,6 +2,8 @@ language: node_js
 node_js:
 - "5.9.1"
 sudo: false
+services:
+- docker
 cache:
   directories:
   - node_modules
@@ -11,6 +13,8 @@ before_install:
 - rvm use 2.2.2
 - gem install bundler
 - bundle install --path vendor/bundle
+script:
+- ./scripts/deploy-to-staging.sh
 deploy:
   skip_cleanup: true
   provider: script
