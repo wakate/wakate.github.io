@@ -78,6 +78,10 @@ page "/feed.xml", layout: false
 #   end
 # end
 
+configure :production do
+  ignore "robots.txt"
+end
+
 # Build-specific configuration
 configure :build do
   # Minify CSS on build

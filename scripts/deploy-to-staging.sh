@@ -2,7 +2,7 @@
 
 set -eu
 
-bundle exec middleman build
+bundle exec middleman build -e development
 
 function printHeader() {
   echo -e "\n\n==== $1 ..."
