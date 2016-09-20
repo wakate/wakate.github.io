@@ -39,6 +39,8 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   printHeader "Build docker image"
   docker build \
     -t $imageName \
+    --build-arg USER=$USER \
+    --build-arg PASS=$PASS \
     .
 
   printHeader "Push docker image"
