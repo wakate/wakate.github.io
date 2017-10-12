@@ -68,7 +68,7 @@
   $text-color,
   $accent-color
 ) {
-  display: inline-block;
+  display: inline;
   color: $text-color;
 
   background: linear-gradient(transparent 40%, $accent-color 40%);
