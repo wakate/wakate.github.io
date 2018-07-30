@@ -26,3 +26,11 @@
 = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
 
 = stylesheet_link_tag "style"
+
+-# Google Analytics
+%script{:async => true, :src => "https://www.googletagmanager.com/gtag/js?id=UA-122938656-1"}
+:javascript
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-122938656-1');
