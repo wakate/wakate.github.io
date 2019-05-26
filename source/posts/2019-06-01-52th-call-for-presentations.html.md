@@ -96,28 +96,3 @@ datetime: 2018-07-28T00:15:00+09:00
 * 武田 真之（慶應義塾大学）
 * 田中 京介（電気通信大学）
 * 和田 佳大（株式会社サイバーエージェント）
-
-<!-- Twitter single-event website tag code -->
-<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
-<script type="text/javascript">twttr.conversion.trackPid('nzxqj', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
-<noscript>
-<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nzxqj&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nzxqj&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0" />
-</noscript>
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '207996539880913');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=207996539880913&ev=PageView&noscript=1"
-/></noscript>
