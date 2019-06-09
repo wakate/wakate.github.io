@@ -6,7 +6,7 @@ config = JSON.parse(open('./config.json').read)
 # Page options, layouts, aliases and proxies
 ###
 
-set :haml, { ugly: true, format: :html5 }
+set :haml, { format: :html5 }
 set :images_dir, '/assets/images'
 
 # Per-page layout changes:
