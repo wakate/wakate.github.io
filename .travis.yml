@@ -11,10 +11,11 @@ before_install:
 - rvm install 2.6.3
 - rvm use 2.6.3
 install:
+- yarn
 - gem install bundler
 - bundle install --path vendor/bundle
 script:
-- rvm 2.6.3 do bundle exec middleman --verbose build
+- rvm 2.6.3 do bundle exec middleman build
 deploy:
   skip_cleanup: true
   provider: script

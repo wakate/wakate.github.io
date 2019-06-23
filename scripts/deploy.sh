@@ -3,12 +3,12 @@
 set -ev
 
 if  [ -z "$GIT_USER" ]; then
-    echo "GIT_USER has not existed."
+    echo "GIT_USER is not set, aborting."
     exit 1
 fi
 
 if  [ -z "$GIT_EMAIL" ]; then
-    echo "GIT_EMAIL has not existed."
+    echo "GIT_EMAIL is not set, aborting."
     exit 1
 fi
 
