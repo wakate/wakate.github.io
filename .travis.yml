@@ -10,6 +10,7 @@ cache:
 before_install:
 - rvm install 2.6.3
 - rvm use 2.6.3
+- npm install -g yarn
 install:
 - yarn
 - gem install bundler
