@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2018-11-13T00:00:00+00:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>第51回 情報科学若手の会 開催報告</title>
+    <link rel="alternate" href="http://blog.url.com/2018/11/13/51threport/"/>
+    <id>http://blog.url.com/2018/11/13/51threport/</id>
+    <published>2018-11-13T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="section"&gt;はじめに&lt;/h1&gt;
+&lt;ul class="sns-share-buttons"&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="第51回 情報科学若手の会 開催報告" data-url="https://wakate.org/2018/11/13/51th-report/" data-via="is_wakate" data-hashtags="wakate2018" data-lang="ja" data-show-count="false"&gt;Tweet&lt;/a&gt;&lt;script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwakate.org%2F2018%2F11%2F13%2F51th-report%2F&amp;amp;layout=button_count&amp;amp;size=small&amp;amp;mobile_iframe=true&amp;amp;width=72&amp;amp;height=20&amp;amp;appId" width="72" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"&gt;&lt;/iframe&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"&gt;&lt;img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://wakate.org/2018/11/13/51th-report/" style="display: none;"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript" src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"&gt;&lt;/script&gt;
+
+&lt;p&gt;2018年10月6日から10月8日にかけて、加藤山崎教育基金 軽井沢研修所(長野県北佐久郡)で、第51回情報科学若手の会を開催いたしました。全国より招待講演者を含む41名が参加し、様々な分野の発表を行い、 活発に議論しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/assets/images/51th_general_group.jpg" alt="51th" /&gt;&lt;/p&gt;
+
+&lt;h1 id="section-1"&gt;発表および議論&lt;/h1&gt;
+
+&lt;p&gt;以下のような発表枠を用意し、議論を行いました。 本年は、通常発表6件、ショート発表8件の発表がありました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;招待講演: 60分 (質疑含む)&lt;/li&gt;
+  &lt;li&gt;一般発表: 発表30分＋質疑10分&lt;/li&gt;
+  &lt;li&gt;ショート発表: 発表15分＋質疑10分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-2"&gt;発表一覧 (敬称略)&lt;/h2&gt;
+
+&lt;h3 id="section-3"&gt;招待講演: 「そうだコンテナー データセンターを作ろう」 日本マイクロソフト株式会社 宇田周平&lt;/h3&gt;
+
+&lt;p&gt;「クラウド時代のエンジニアに、オンプレミスのインフラ環境なんて必要ない!」、そう思っていた時期
+が私にもありました。でも、今は違います。コンテナー (物理) にはクラウドでは絶対に得られない貴重な経験と、先人たちが築き上げた多くのノウハウが詰まっています。パッション (+ 時間とお金) があればコンテナー データセンターは個人でも作れる時代です。私が実際に建設した経験と未公開写真をもとに、その魅力をお伝えします。&lt;/p&gt;
+
+&lt;h3 id="the-art-of-de-obfuscation-ntt-"&gt;若手特別講演: 「The Art of De-obfuscation」 日本電信電話株式会社NTTセキュアプラットフォーム研究所 黒米祐馬&lt;/h3&gt;
+
+&lt;p&gt;リバースエンジニアリングは骨が折れる作業です。とりわけ、プログラムコードに難読化 (obfuscation) が施されていた場合には。本講演では、難読化の原理、難読化コードの読み解き方、そしてSMTソルバを核とした形式手法によって難読化コードのリバースエンジニアリングを効率化する試みを紹介します。&lt;/p&gt;
+
+&lt;h3 id="web-freee--"&gt;スポンサー発表 1: 「Webサービスへの要求の変化と技術選定」 freee株式会社 中島 啓貴&lt;/h3&gt;
+
+&lt;p&gt;私は2017年にfreee株式会社に新卒エンジニアとして入社し会計フリーの開発に携わっている。一年半は短い期間ではあるが、組織としては急激に拡大した期間であり、プロダクトに対するニーズは大きく変化し、それに伴い多くの新たな技術がプロダクトに導入されてきた。当発表では、現在までに会計フリーに実際に導入されてきた技術を取り上げ、導入の経緯と効果を明らかにし、Webサービスに対する技術選定においてどのような視点を持つべきかを考察する。&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;スポンサー発表 2: 「コンパイラ技術で描く次世代ハードウェア開発の姿」 株式会社フィックスターズ 丸岡 晃&lt;/h3&gt;
+
+&lt;p&gt;ムーアの法則の終焉に伴い、半導体の集積率向上による性能及び電力効率の向上はもはや停滞しつつあります。システムがより複雑化していく一方で高度な電力効率と応答性の要求を達成するためには、プログラマビリティを担保しつつ特定のアプリケーションに特化したドメイン固有アーキテクチャを開発・使用出来るようなプログラミング言語及びコンパイラ技術が不可欠となるでしょう。
+本発表では画像処理用ドメイン固有言語である「Halide」と高度なコンパイラ技術を使って、次世代の専用ハードウェア開発にあるべき姿を描きます。&lt;/p&gt;
+
+&lt;h3 id="preferred-networks--preferred-networks--"&gt;スポンサー発表 3: 「Preferred Networks ってどんな会社?&amp;amp;ディープラーニングで変わる世界」 株式会社Preferred Networks 今城 健太郎&lt;/h3&gt;
+
+&lt;p&gt;前半「Preferred Networksはどのような経営方針で成長しているのかについて自分目線で紹介します。」
+後半「ディープラーニングの優位性を伝えつつ、機械学習を使った製品が今後どのような設計になると思っているのかを紹介します。」&lt;/p&gt;
+
+&lt;h3 id="ra--"&gt;通常発表 1: 「生物に学ぶ深層学習 -第3次人工知能ブームの今とこれから-」 産業技術総合研究所 人工知能研究センター (RA) 鈴木 藍雅&lt;/h3&gt;
+
+&lt;p&gt;2018年現在、人工知能(AI)という言葉が半ばバズワードとして情報の世界にとどまらず、様々な分野でもてはやされています。この第3次人工知能ブームは、2005年のHintonらによるディープニューラルネットワークの成功、そして2012年のKrizhevsky, LeCunらによる畳み込みニューラルネットの画像認識における応用を皮切りにした深層学習(ディープラーニング)技術の賜物とも言えます。
+この人工知能ブームに乗っかって、そしてRed-oceanの中で揉まれている、一院生が(生意気にも)この「終わりつつある」人工知能ブームの総括と周辺技術の未来についてお話をしたいと思います。&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;通常発表 2: 「オープンハウスにおける機械学習・データサイエンスの取り組みについて」 株式会社オープンハウス 中川 帝人&lt;/h3&gt;
+
+&lt;p&gt;オープンハウスにおける機械学習・データサイエンス、人工知能の取り組みについて説明します。不動産業界における機械学習における課題やデータ活用や整備状況についても説明します。&lt;/p&gt;
+
+&lt;h3 id="future-idein-een"&gt;通常発表 3: 「Futureとその周辺サーベイ」 Idein株式会社 κeen&lt;/h3&gt;
+
+&lt;p&gt;並行デザインパターンのFutureやasync/await、発展してコルーチンなどの様々な非同期を扱うプログラミング言語の機能をサーベイします。&lt;/p&gt;
+
+&lt;h3 id="basic-seccap------"&gt;ショート発表 1: 「Basic SecCap の紹介と京都大学提供「情報セキュリティ演習」の設計と実装」 京都大学学術情報メディアセ ンター (助教) 小谷 大祐&lt;/h3&gt;
+
+&lt;p&gt;全国の14の大学が連携して運営している学部生向けの情報セキュリティ人材育成プログラム enPiT-Security (Basic SecCap) の紹介と、連携校の1つである京都大学工学部情報学科計算機科学コースが Basic SecCap に提供しているPBL演習科目「情報セキュリティ演習」について、学部生かつ他学からの学生の受け入れを前提とした演習内容および BYOD を前提とし IaaS を活用した演習環境の設計と実装について発表します。&lt;/p&gt;
+
+&lt;h3 id="segment-routing-2-"&gt;ショート発表 2: 「segment routingの利用例と未来」 東北学院大学工学部情報基盤工学科2年 早坂彪流&lt;/h3&gt;
+
+&lt;p&gt;segment routingと呼ばれる次世代のルーティングパラダイムがある。比較的新しく認知度の低いものであるが数年後の未来に利用されるのを目指すというinterop tokyoでのデモが行われ、かなりポテンシャルのあるパラダイムの一つである。これらの紹介を簡単におこなう。&lt;/p&gt;
+
+&lt;h3 id="section-6"&gt;ショート発表 3: 「自動販売機に炭酸飲料を導入してくれない学校で炭酸を飲むシステムを開発した話」 八王子桑志高校シ ステム情報分野3年 高田 勝悟&lt;/h3&gt;
+
+&lt;p&gt;私の通っている高校の自動販売機には炭酸飲料がなかったのでクラス内で炭酸飲料を売買できるようなシステムを開発しました。そこでPyhonのフレームワークのDjangoを使ったアプリを作り商品や金銭を管理したのでそれについて話します。&lt;/p&gt;
+
+&lt;h3 id="section-7"&gt;ショート発表 4: 「量子コンピュータ どう動くか・どう動かすか」 (氏名非公開希望)&lt;/h3&gt;
+
+&lt;p&gt;量子コンピュータの動作原理やプログラミング方法を解説します。特に量子ゲート方式と呼ばれている方式の量子コンピュータに絞り、どのような実装技術が量子コンピュータの実現に用いられているか、量子コンピュータのアーキテクチャ、量子プログラミング言語の話をします。&lt;/p&gt;
+
+&lt;h3 id="itamae--"&gt;ショート発表 5: 「冬の陣2018から何か進展あったんですか?(Itamae)」 株式会社バンク うなすけ&lt;/h3&gt;
+
+&lt;p&gt;情報科学若手の会冬の陣2018 で発表した、Infra as Codeツールである ItamaeのCIを直す発表 https://github.com/unasuke/wakate2018w_talk が、現在はどういう状況にあるのかということについて発表します。&lt;/p&gt;
+
+&lt;h3 id="ctf-2--"&gt;ショート発表 6: 「CTFと現実世界」 東京農工大学工学府情報工学専攻2年 市川 遼&lt;/h3&gt;
+
+&lt;p&gt;CTF (Capture The Flag) とはセキュリティの技術を競い合うコンテストのことです。あくまでも競技として考えられているCTFですが、一方で現実のコンピュータセキュリティの問題に関わってくることも少なくありません。また、CTFを開催する企業やカンファレンスは例年増えてきており、CTFを開催することによって得られるメリットがあるのも確かです。本発表では、そういったCTFの持つ副作用に焦点を当て、現実世界に対してどのように貢献しうるのか、近年のCTFの例と共に紹介します。&lt;/p&gt;
+
+&lt;h3 id="firebasearduino-3--"&gt;ショート発表 7: 「FirebaseとArduinoで忘れ物をなくす」 東京都立八王子桑志高等学校産業科システム情報分野3年 久下 柾&lt;/h3&gt;
+
+&lt;p&gt;高校の課題研究で研究していることについてお話します。研究のグループの中で、忘れ物が多い人がいて、その人の発案で始まった課題研究。少ない研究費用の中でどれだけ高性能なものに作れるか挑戦中です。Arduino UNO、ESP8266モジュール、Firebaseを使って実装しました。高校の先生からプリント基板加工機をお借りして、PCBにもチャレンジしました。
+高校3年間で培った知識の集大成です。&lt;/p&gt;
+
+&lt;h3 id="section-8"&gt;ショート発表 8: 「サイバー攻撃の脅威度の分析と可視化」 金沢工業大学工学部3年 竹村太一&lt;/h3&gt;
+
+&lt;p&gt;　NICTが主催しているSecHack365(https://sechack365.nict.go.jp/)というイベントにおいて、Webサーバへの攻撃の脅威度の可視化をするソフトをチームで開発しました(https://github.com/zeroalphat/LogVisualization)。
+　既存のソフトでは、専門的な知識を持つユーザを対象にされているため、専門知識を持たないユーザはわかりにくく、内容が伝わりにくいのではないかと考えました。そのため、攻撃の脅威度とモンスターを関連付けて表示することにより専門的な知識を持たないユーザにもわかりやすく可視化するソフトを作成しました。成果物について、発表をしたいと思います。&lt;/p&gt;
+
+&lt;h2 id="section-9"&gt;ナイトセッション&lt;/h2&gt;
+
+&lt;p&gt;ナイトセッションでは、発表時間5分のLT発表を行い、10件の発表がありました。 このほかにも多くの飛び込み発表があり、ナイトセッションも大変盛況となりました。&lt;/p&gt;
+
+&lt;h1 id="sns"&gt;SNSでの反応&lt;/h1&gt;
+
+&lt;h2 id="twitter"&gt;Twitter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/hashtag/wakate2018"&gt;#wakate2018 - Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="section-10"&gt;ブログ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://blog.unasuke.com/2018/wakate2018/"&gt;第51回 情報科学若手の会に参加しました | うなすけとあれこれ&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://keens.github.io/blog/2018/10/08/jouhoukagakuwakatenokai__51_nisankashitekita/"&gt;情報科学若手の会 #51 に参加してきた | κeenのHappy Hacκing Blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://kuge-masa.hatenablog.com/entry/wakate2018"&gt;第51回情報科学若手の会に参加してきました - 気の赴くままに&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://haneuma0628.hatenablog.jp/entry/2018/10/09/122409"&gt;第51回 情報科学若手の会に参加しました - haneuma.log&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://hogashi.hatenablog.com/entry/2018/10/09/194518"&gt;第51回情報科学若手の会に参加しました - hogashi.*&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://kurochan-note.hatenablog.jp/entry/2018/10/09/235051"&gt;情報科学若手の会に参加しました/運営をしました/幹事とは #wakate2018 - くろの雑記帳&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://icchy.hatenablog.jp/entry/2018/10/10/230522"&gt;第51回情報科学若手の会に参加してきました - 雑記&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://pandaman64.hatenablog.jp/entry/2018/10/10/210850"&gt;第51回 情報科学若手の会 - 井山梃子歴史館&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://tateishi-18.hatenablog.com/entry/2018/10/08/234613"&gt;2018年度版　今年も情報科学若手の会に参加してまいりました - tateishi_18の日記、情報科学とモノづくりについて&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://takeio.hatenablog.com/entry/2018/10/09/031159"&gt;情報科学若手の会に参加した - お腹.ヘッタ。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://e10dokup.hateblo.jp/entry/2018/10/14/003549"&gt;第51回情報科学若手の会を運営して参加してきた #wakate2018 - どくぴーの備忘録&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://developers.freee.co.jp/entry/wakate2018-report"&gt;「第51回 情報科学若手の会」に参加してきました。 - freee Developers Blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="section-11"&gt;おわりに&lt;/h1&gt;
+
+&lt;p&gt;参加者全員がいろいろなトピックに触れることができるとともに、異分野の研究者ならではの同分野と異なる視点での議論や新たな可能性についての討論など研究者の視野・研究者同士のつながりを広げることができ、有意義な会合となりました。&lt;/p&gt;
+
+&lt;p&gt;来年度も情報科学若手の会を開催する予定です。下記のWebページにて随時情報を更新しております。 多くの方のご参加をお待ちしております。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://wakate.org"&gt;情報科学若手の会 http://wakate.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="section-12"&gt;謝辞&lt;/h1&gt;
+
+&lt;p&gt;招待講演を快く引き受けてくださいました日本マイクロソフト株式会社 宇田周平 様、若手特別講演を引き受けてくださいました日本電信電話株式会社NTTセキュアプラットフォーム研究所 黒米祐馬 様、スポンサーとしてご援助いただきましたfreee株式会社 様、さくらインターネット株式会社 様、株式会社フィックスターズ 様、株式会社Preferred Networks 様、株式会社サイバーエージェント 様、Idein株式会社 様、この若手の会開催にあたり様々な面からご支援くださいました明治大学 横山先生をはじめとするプログラミングシンポジウム幹事の皆様にこの場をお借りして深く御礼申し上げます。&lt;/p&gt;
+
+&lt;h1 id="section-13"&gt;幹事&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;黒崎優太 (株式会社サイバーエージェント)&lt;/li&gt;
+  &lt;li&gt;佐々木康汰 (さくらインターネット株式会社)&lt;/li&gt;
+  &lt;li&gt;高橋真奈茄 (ヤフー株式会社)&lt;/li&gt;
+  &lt;li&gt;武田 真之 (慶應義塾大学)&lt;/li&gt;
+  &lt;li&gt;田中 京介 (電気通信大学)&lt;/li&gt;
+  &lt;li&gt;柳川優子 (株式会社NTTコミュニケーションズ)&lt;/li&gt;
+  &lt;li&gt;和田 佳大 (株式会社サイバーエージェント)&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>第51回 情報科学若手の会 参加者・発表者の受付を開始しました [※9/12をもちまして締め切りました]</title>
+    <link rel="alternate" href="http://blog.url.com/2018/07/28/51th-general/"/>
+    <id>http://blog.url.com/2018/07/28/51th-general/</id>
+    <published>2018-07-28T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+&lt;h1 id="span-stylecolor-red912span"&gt;第51回 情報科学若手の会 参加者・発表者の受付を開始しました → &lt;span style="color: red;"&gt;[※9/12をもちまして締め切りました]&lt;/span&gt;&lt;/h1&gt;
+&lt;ul class="sns-share-buttons"&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="第51回 情報科学若手の会 の参加申し込みを開始しました" data-url="https://wakate.org/2018/07/28/51th-general/" data-via="is_wakate" data-hashtags="wakate2018" data-lang="ja" data-show-count="false"&gt;Tweet&lt;/a&gt;&lt;script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwakate.org%2F2018%2F07%2F28%2F51th-general%2F&amp;amp;layout=button_count&amp;amp;size=small&amp;amp;mobile_iframe=true&amp;amp;width=72&amp;amp;height=20&amp;amp;appId" width="72" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"&gt;&lt;/iframe&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"&gt;&lt;img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;div class="line-it-button" data-lang="ja" data-type="share-a" data-url="https://wakate.org/2018/07/28/51th-general/" style="display: none;"&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script type="text/javascript" src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"&gt;&lt;/script&gt;
+
+&lt;h2 id="section"&gt;情報科学若手の会とは&lt;/h2&gt;
+&lt;p&gt;情報科学若手の会とは、情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会です（&lt;a href="https://wakate.org/2017/10/10/50threport/"&gt;昨年の開催報告&lt;/a&gt;）。&lt;br /&gt;
+幅広い分野から参加者を募り、互いの交流を深めることで新たな発想が生まれることを目指しています。 インフォーマルな雰囲気ですので、これから研究を始めるという方も是非ご参加下さい。
+&lt;img src="/assets/images/50th_general_group.jpg" alt="50th" /&gt;&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;招待講演&lt;/h2&gt;
+
+&lt;h3 id="section-2"&gt;講演者&lt;/h3&gt;
+&lt;p&gt;日本マイクロソフト株式会社 宇田周平 様&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;プロフィール&lt;/h3&gt;
+&lt;p&gt;2013 年慶應義塾大学環境情報学部卒。同年日本マイクロソフトに入社し、現在に至るまで Windows や Azure のサポート業務に従事。2016 年から 2018 年にかけて個人でコンテナー データセンターを建設し、今夏より稼働を開始。&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;題目&lt;/h3&gt;
+&lt;p&gt;そうだコンテナー データセンターを作ろう&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;概要&lt;/h3&gt;
+&lt;p&gt;「クラウド時代のエンジニアに、オンプレミスのインフラ環境なんて必要ない！」、そう思っていた時期が私にもありました。でも、今は違います。コンテナー (物理) にはクラウドでは絶対に得られない貴重な経験と、先人たちが築き上げた多くのノウハウが詰まっています。パッション (+ 時間とお金) があればコンテナー データセンターは個人でも作れる時代です。私が実際に建設した経験と未公開写真をもとに、その魅力をお伝えします。&lt;/p&gt;
+
+&lt;h2 id="section-6"&gt;若手特別講演&lt;/h2&gt;
+
+&lt;h3 id="section-7"&gt;講演者&lt;/h3&gt;
+&lt;p&gt;日本電信電話株式会社NTTセキュアプラットフォーム研究所 黒米祐馬 様 ( &lt;a href="https://twitter.com/ntddk"&gt;@ntddk&lt;/a&gt; )&lt;/p&gt;
+
+&lt;h3 id="section-8"&gt;プロフィール&lt;/h3&gt;
+&lt;p&gt;2017年慶應義塾大学環境情報学部卒業。同年日本電信電話株式会社 (NTT) 入社、セキュアプラットフォーム研究所配属。マルウェア対策技術の研究開発に従事。&lt;/p&gt;
+
+&lt;h3 id="section-9"&gt;題目&lt;/h3&gt;
+&lt;p&gt;The Art of De-obfuscation&lt;/p&gt;
+
+&lt;h3 id="section-10"&gt;概要&lt;/h3&gt;
+&lt;p&gt;リバースエンジニアリングは骨が折れる作業です。とりわけ、プログラムコードに難読化 (obfuscation) が施されていた場合には。本講演では、難読化の原理、難読化コードの読み解き方、そしてSMTソルバを核とした形式手法によって難読化コードのリバースエンジニアリングを効率化する試みを紹介します。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-11"&gt;開催概要&lt;/h2&gt;
+&lt;p&gt;### 開催日程
+2018年10月6日（土）から8日（月・祝）（2泊3日の合宿形式）&lt;/p&gt;
+
+&lt;p&gt;6日は14時集合（13時30分受付開始）、8日は12時解散を予定しています。&lt;br /&gt;
+土日のみ、あるいは日曜のみの参加なども可能です。参加申込みの際に併せてご連絡ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※ 9月の3連休は研究会や国際会議の締め切りと重なって参加しづらいとの声があり、 10月に時期を変更しました。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id="section-12"&gt;場所&lt;/h3&gt;
+&lt;p&gt;軽井沢研修所 (長野県北佐久郡軽井沢町大字長倉（大日向）5607) &lt;a href="http://www.kato-karuizawa.jp/"&gt;リンク&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;宿泊は男女別の相部屋となります。 建物内は禁煙です。&lt;/p&gt;
+
+&lt;h3 id="section-13"&gt;募集人数&lt;/h3&gt;
+&lt;p&gt;45名&lt;/p&gt;
+
+&lt;h3 id="twitter"&gt;Twitterのハッシュタグ&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/hashtag/wakate2018"&gt;#wakate2018&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-14"&gt;発表形式&lt;/h2&gt;
+
+&lt;h3 id="section-15"&gt;一般発表、ショート発表&lt;/h3&gt;
+&lt;p&gt;発表者の皆様の研究やご興味をお持ちの話題についてご発表いただくものです。ある分野や技術に関するチュートリアルのような発表も歓迎します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一般発表: 発表30分 + 質疑応答10分&lt;/li&gt;
+  &lt;li&gt;ショート発表: 発表15分 + 質疑応答10分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;参加者の皆様に何らかの体験をしていただくハンズオンを含む発表も歓迎します。発表時間など調整しますので、発表申し込みの際にその旨をご連絡ください。&lt;/p&gt;
+
+&lt;h3 id="section-16"&gt;ライトニングトーク&lt;/h3&gt;
+&lt;p&gt;発表者の皆様に自由に短い時間（5分間）発表していただくものです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-17"&gt;参加費（食費・宿泊費込）&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;高校/高専生、学部2年生（未成年）まで: 10,000円&lt;/li&gt;
+  &lt;li&gt;その他学生（成年）: 14,000円&lt;/li&gt;
+  &lt;li&gt;社会人: 24,000円&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(1) 複数の参加区分に該当する方は、該当する区分のうち、いずれか金額の高い方を適用させていただきます。&lt;br /&gt;
+(2) 一部の日程のみ参加される場合でも参加費の減額はありません。&lt;/p&gt;
+
+&lt;h3 id="section-18"&gt;交通費補助&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;学生/社会人1年目には交通費の一部補助を検討しております。&lt;/li&gt;
+  &lt;li&gt;予算状況により、一般/ショート発表に採択された学生、学生、社会人1年目の優先順位となります。&lt;/li&gt;
+  &lt;li&gt;他 (所属組織等) から補助を受けていない方に限ります。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-19"&gt;未成年者の参加者に関する注意事項&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;言うまでもないことではありますが、未成年の参加者への酒類提供は一切致しません。なお、参加費は宴会でのアルコール飲料の代金を差し引いた金額となっております。&lt;/li&gt;
+  &lt;li&gt;未成年の方が参加する場合には、親権者の承諾書を提出して頂く必要があります。 具体的な様式および提出方法については、参加申し込み後に幹事よりご連絡します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-20"&gt;参加費の支払いとキャンセルについて&lt;/h3&gt;
+&lt;p&gt;会場では参加費を受け取りません。参加申し込みを受け付けた後、情報処理学会から請求書、郵便振替用紙、送金連絡票を郵送します。お手数ですが、郵便振替、銀行振込、現金書留などの手段で事前に参加費の払込みを済ませるようお願いいたします。お送りした郵便振替用紙を使って振り込んだ場合、手数料は無料です。それ以外の振込みの場合は、送金連絡票に必要事項を記入して、下記照会先にご連絡ください。海外にお住まいのご参加者様には情報処理学会からメールにて支払いについてのご連絡をいたしますので確認をよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;照会先:
+情報処理学会 事業部門（第51回情報科学若手の会係）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Phone: 03-3518-8373&lt;/li&gt;
+  &lt;li&gt;Fax: 03-3518-8375&lt;/li&gt;
+  &lt;li&gt;Email: wakate51 [at] ipsj.or.jp&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;※ 今年より、クレジットカードでのお支払いも対応可能となりました。手数料の関係でクレジットカード以外でのお支払いが不可能な場合に個別に相談頂いた上での対応とさせて頂きます。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;振込期限・参加取消期限は、2018年9月21日（金）です。
+参加申込み後やむを得ず参加を取り消される場合は、
+wakate51 [at] ipsj.or.jp まで連絡をお願いします。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※ 9月21日までに取消しの連絡が無い場合は、参加費の払い戻しはできません。&lt;/strong&gt;
+&lt;strong&gt;また、参加費を振り込まないことにより、自動的に参加取消しにはなりません。&lt;/strong&gt;
+&lt;strong&gt;9月21日までに取消しの連絡が無い場合は、
+連絡の有無にかかわらず参加費をお支払いいただく必要があります。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-21"&gt;参加・発表申込&lt;/h2&gt;
+&lt;p&gt;&lt;span style="text-decoration: line-through;"&gt;参加を希望される方は、 &lt;a href="https://goo.gl/forms/YUzJ5JpvtemSevzp1"&gt;第51回 情報科学若手の会 参加申し込みフォーム&lt;/a&gt; より必要事項を記入しお申し込みください。&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;発表を希望される方は、発表を希望される方は &lt;a href="https://goo.gl/forms/8u87Qt3KSy5xyd3A3"&gt;第51回 情報科学若手の会 発表希望記入フォーム&lt;/a&gt; から登録してください &lt;strong&gt;（※ 発表者の方も参加申込みが必要です）&lt;/strong&gt;。
+後日調整の上、発表者を決定いたします。
+なお、ライトニングトークは若手の会の当日も募集いたします。&lt;/p&gt;
+
+&lt;h3 id="section-22"&gt;申込み締め切り&lt;/h3&gt;
+&lt;p&gt;&lt;span style="text-decoration: line-through;"&gt;2018年8月31日（金） → &lt;span style="color: red;"&gt;締切を9/14(金)まで延長しました&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;（期日前でも定員になり次第、締切らせていただきます）&lt;/p&gt;
+
+&lt;h3 id="section-23"&gt;個人情報について&lt;/h3&gt;
+&lt;p&gt;ご提供いただいた個人情報は、以下の目的にのみ利用させていただきます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;情報科学若手の会運営のため&lt;/li&gt;
+  &lt;li&gt;お問い合わせ対応のため&lt;/li&gt;
+  &lt;li&gt;関連情報ご提供のため&lt;/li&gt;
+  &lt;li&gt;統計データとしての利用のため（*1）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;同意を得た場合及び法令に基づく場合などを除いて、個人情報を当該目的以外に利用いたしません。&lt;/p&gt;
+
+&lt;p&gt;*1 こちらは情報科学若手の会の改善や宣伝のために、個人情報が判明しない状態（男女比・年齢分布など）での利用を想定しております&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-24"&gt;主催&lt;/h2&gt;
+&lt;p&gt;一般社団法人 情報処理学会 プログラミングシンポジウム委員会&lt;/p&gt;
+
+&lt;h2 id="section-25"&gt;スポンサー&lt;/h2&gt;
+
+&lt;h3 id="section-26"&gt;通常スポンサー&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://jobs.freee.co.jp/"&gt;&lt;img src="/assets/images/freee_logo_2018.png" alt="icon1" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.sakura.ad.jp/"&gt;&lt;img src="/assets/images/sakura_logo_2017.png" alt="icon2" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.fixstars.com/ja"&gt;&lt;img src="/assets/images/fixtars_logo_2018.png" alt="icon3" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.preferred-networks.jp/"&gt;&lt;img src="/assets/images/pfn_logo_2018.png" alt="icon4" /&gt;&lt;/a&gt;　&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;freee株式会社 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;さくらインターネット株式会社 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;株式会社フィックスターズ 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;株式会社Preferred Networks 様（1口）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id="section-27"&gt;懇親会スポンサー&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.cyberagent.co.jp/"&gt;&lt;img src="/assets/images/cyberagent_logo_2018.png" alt="icon5" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://idein.jp/"&gt;&lt;img src="/assets/images/idein_logo_2018.svg" alt="icon6" /&gt;&lt;/a&gt;　&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;株式会社サイバーエージェント 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;Idein株式会社 様（1口）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id="section-28"&gt;連絡先&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;参加費の振込や参加申込の取消に関するお問い合わせ: wakate51 [at] ipsj.or.jp&lt;/li&gt;
+  &lt;li&gt;その他（参加申込前のお問い合わせや発表申込など）: info [at] wakate.org&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-29"&gt;情報科学若手の会幹事&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;黒崎 優太（株式会社サイバーエージェント）&lt;/li&gt;
+  &lt;li&gt;佐々木 康汰（さくらインターネット株式会社）&lt;/li&gt;
+  &lt;li&gt;高橋 真奈茄（ヤフー株式会社）&lt;/li&gt;
+  &lt;li&gt;武田 真之（慶應義塾大学）&lt;/li&gt;
+  &lt;li&gt;田中 京介（電気通信大学）&lt;/li&gt;
+  &lt;li&gt;柳川 優子（株式会社NTTコミュニケーションズ）&lt;/li&gt;
+  &lt;li&gt;和田 佳大（株式会社サイバーエージェント）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Twitter single-event website tag code --&gt;
+&lt;script src="//platform.twitter.com/oct.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;twttr.conversion.trackPid('nzxqj', { tw_sale_amount: 0, tw_order_quantity: 0 });&lt;/script&gt;
+
+&lt;noscript&gt;
+&lt;img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=nzxqj&amp;amp;p_id=Twitter&amp;amp;tw_sale_amount=0&amp;amp;tw_order_quantity=0" /&gt;
+&lt;img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=nzxqj&amp;amp;p_id=Twitter&amp;amp;tw_sale_amount=0&amp;amp;tw_order_quantity=0" /&gt;
+&lt;/noscript&gt;
+
+&lt;!-- Facebook Pixel Code --&gt;
+&lt;script&gt;
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '207996539880913');
+  fbq('track', 'PageView');
+&lt;/script&gt;
+
+&lt;noscript&gt;&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=207996539880913&amp;amp;ev=PageView&amp;amp;noscript=1" /&gt;&lt;/noscript&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>第51回情報科学若手の会スポンサー募集のご案内</title>
+    <link rel="alternate" href="http://blog.url.com/2018/06/25/51th-sponsor/"/>
+    <id>http://blog.url.com/2018/06/25/51th-sponsor/</id>
+    <published>2018-06-25T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;情報科学若手の会では、第51回情報科学若手の会のスポンサーを募集いたします。&lt;br /&gt;
+スポンサーにお申し込みいただける方は、募集要項をお読みいただき、info [at] wakate.org まで必要事項をご連絡ください。&lt;/p&gt;
+
+&lt;h2 id="section"&gt;募集期間&lt;/h2&gt;
+&lt;p&gt;2018年6月25日(月) 〜 2018年7月9日(月)&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;募集要項&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;スポンサーにご応募いただくのは、IT業界に関わる企業であることを原則といたします。&lt;/li&gt;
+  &lt;li&gt;通常スポンサー1口6万円、懇親会スポンサー1口3万円で、1企業1口まで受付いたします。&lt;/li&gt;
+  &lt;li&gt;情報科学若手の会は情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会を目指しておりますので、この趣旨に合わないと考えられる場合は、幹事で検討の上、お断りさせていただくことがございます。ご了承ください。&lt;/li&gt;
+  &lt;li&gt;多くのお申し出をいただいた場合、締め切りを繰り上げる場合があります。&lt;/li&gt;
+  &lt;li&gt;そのほかご質問等ございましたら、info [at] wakate.org までご連絡ください。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-2"&gt;特典&lt;/h2&gt;
+&lt;p&gt;スポンサーになっていただいた場合、以下の特典があります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;情報科学若手の会の公式Webサイトの第51回の参加者募集記事に企業のロゴを掲載すること&lt;/li&gt;
+  &lt;li&gt;今回参加者に配布するパンフレットに企業のロゴを掲載すること&lt;/li&gt;
+  &lt;li&gt;企業から1名無料で第51回情報科学若手の会にご参加いただくこと（情報科学若手の会の趣旨に合う方のご参加を特に歓迎いたします）&lt;/li&gt;
+  &lt;li&gt;ご発表を行っていただくこと（情報科学若手の会の趣旨から外れないものに限ります）
+    &lt;ul&gt;
+      &lt;li&gt;通常スポンサーの場合、通常セッションにて25〜30分の講演枠(発表：20分、質疑応答5~10分)&lt;/li&gt;
+      &lt;li&gt;懇親会スポンサーの場合、懇親会前に10分程度のLT枠&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-3"&gt;お申し込み方法&lt;/h2&gt;
+&lt;p&gt;以下の項目を info [at] wakate.org にご連絡ください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;スポンサー企業名&lt;/li&gt;
+  &lt;li&gt;ご担当者様の氏名・部署名・メールアドレス・電話番号&lt;/li&gt;
+  &lt;li&gt;掲載企業名（Webページやパンフレットに掲載する際に利用いたします）&lt;/li&gt;
+  &lt;li&gt;ロゴ画像 （210x120 のサイズに収まるように加工してWebページへ掲載いたします）&lt;/li&gt;
+  &lt;li&gt;URL（1つのみ）（ロゴ画像にリンクします）&lt;/li&gt;
+  &lt;li&gt;ご参加くださる方のお名前、ご連絡先メールアドレス、電話番号・性別&lt;/li&gt;
+  &lt;li&gt;ご発表の有無（タイトルや概要の締め切りは別途設定いたしますが、幹事で検討する上でどのような発表を予定されているのかをお申し込み後に伺うことがあります。）&lt;/li&gt;
+  &lt;li&gt;お申込みいただくスポンサー枠(通常スポンサー または 懇親会スポンサー のどちらかをご指定ください。詳しくは前項の &lt;code&gt;## 特典&lt;/code&gt; をご確認ください。)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;※ 本年よりスポンサー枠が2種類に増えております&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;情報科学若手の会の詳細は http://wakate.org/ に掲載しております。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-4"&gt;第51回情報科学若手の会について&lt;/h2&gt;
+&lt;p&gt;情報科学若手の会は、情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会です。
+幅広い分野から参加者を募り、互いの交流を深めることで新たな発想が生まれることを目指しています。&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;日程&lt;/h3&gt;
+&lt;p&gt;2018年10月6日(土) - 8日(月・祝) (2泊3日の合宿形式)&lt;/p&gt;
+
+&lt;h3 id="section-6"&gt;場所&lt;/h3&gt;
+&lt;p&gt;軽井沢研修所 (長野県北佐久郡軽井沢町大字長倉（大日向）5607)
+http://www.kato-karuizawa.jp/&lt;/p&gt;
+
+&lt;h3 id="section-7"&gt;主催&lt;/h3&gt;
+&lt;p&gt;一般社団法人 情報処理学会 プログラミングシンポジウム委員会&lt;/p&gt;
+
+&lt;p&gt;過去の開催報告を情報科学若手の会のWebサイト (&lt;a href="http://wakate.org/tags/開催報告/"&gt;http://wakate.org/tags/開催報告/&lt;/a&gt;) に掲載していますので、ぜひご覧ください。&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>第50回 情報科学若手の会 開催報告</title>
+    <link rel="alternate" href="http://blog.url.com/2017/10/10/50threport/"/>
+    <id>http://blog.url.com/2017/10/10/50threport/</id>
+    <published>2017-10-10T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;h1 id="section"&gt;はじめに&lt;/h1&gt;
+
+&lt;p&gt;2017年10月7日から10月9日の2泊3日の日程で山喜旅館 (静岡県伊東市) にて第50回情報科学若手の会を開催いたしました。 全国より招待講演者と若手特別講演者を含む46名が参加し、様々な分野の発表を行い、活発な議論が行われました。&lt;/p&gt;
+
+&lt;h1 id="section-1"&gt;発表および議論&lt;/h1&gt;
+
+&lt;p&gt;以下のような発表枠を用意し、議論を行いました。 本年は、通常発表4件、ショート発表9件の発表がありました。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;招待講演：60分 (質疑含む)&lt;/li&gt;
+  &lt;li&gt;一般発表：発表30分＋質疑10分&lt;/li&gt;
+  &lt;li&gt;ショート発表: 発表15分＋質疑10分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-2"&gt;10月7日&lt;/h2&gt;
+
+&lt;h4 id="section-3"&gt;ショート発表 1: 「ブロックチェーンの概要ご紹介」 電気通信大学 情報学専攻 (1年) 中西 建登&lt;/h4&gt;
+
+&lt;p&gt;近年FinTechなどの単語を中心として話題となっている「ブロックチェーン」をベースとして、どのような手法で安全性を守っているか、どのような点において弱点があり、また関連キーワードも交えて、これらの話題が出た際についていけるようになる程度の概要をご紹介します。
+また、ブロックチェーンを用いている中で最も広く使われている「Bitcoin」にも触れ、その高速化を提案した私の卒業論文についてもご紹介させていただきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.slideshare.net/whywaita/wakate2017"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="section-4"&gt;一般発表 1: 「ライトニングネットワークが描くビットコインの未来」 グーグル合同会社 大久保 徹以&lt;/h4&gt;
+
+&lt;p&gt;昨今の送金手数料の高騰と分裂騒動により、ビットコインはスケーラビリティ上の問題を抱えているということが広く認識されるようになってきました。また、ビットコインの有力な用途として小額決済が考えられますが、1送金あたり数百円といった手数料を必要とする現在のビットコインを小額決済用途で直接用いることは困難です。これらの解決策としていくつかの手法が提案されていますが、その中でもライトニングネットワークと呼ばれる技術がいくつかの点から注目されています。ライトニングネットワークを用いることで、信頼できる第三者を必要とせずに、ビットコインネットワーク上で数銭といった単位での決済が可能となります。本発表では、ビットコインの基本的な仕組みとライトニングネットワークの実現方法について解説するとともに、今後ビットコインがどのように発展していくかを考えていきます。&lt;/p&gt;
+
+&lt;h4 id="section-5"&gt;ショート発表 2: 「スマートコントラクトによる機械学習モデル同士の判断合意」 京都大学理学部３回生 昼間 輝一&lt;/h4&gt;
+
+&lt;p&gt;特徴量空間を共有しない機械学習モデル同士の合意の方法について。
+単一では信頼性の低い機械学習モデルが複数で競合・合意することによって、精度が上がり、信頼性を担保できるシステムについて考えた。計算資源がかなり限られている状況を前提とし（特にEthereum上のスマートコントラクトで実行できること）、合意・推論の計算におけるコストパフォーマンスを下げることを中心に設計を行った。これに、合意を行うインセンティブとなる報酬を決めるエコシステムを加えた提案である。&lt;/p&gt;
+
+&lt;h2 id="section-6"&gt;10月8日&lt;/h2&gt;
+
+&lt;h4 id="ai---"&gt;ショート発表 3: 「AIを支えるストレージ基盤技術」 株式会社富士通研究所コンピュータシステム研究所 大辻 弘貴&lt;/h4&gt;
+
+&lt;p&gt;AIを活用するにあたり、学習のための大量のデータをスムーズに蓄積・供給する仕組みが求められています。
+本発表では、高速並列ファイルシステムを用いて、AI向けに最適化したデータ供給を行う手法をご紹介します。&lt;/p&gt;
+
+&lt;h4 id="section-7"&gt;ショート発表 4: 非公開&lt;/h4&gt;
+
+&lt;p&gt;非公開を希望される発表がございました。&lt;/p&gt;
+
+&lt;h4 id="section-8"&gt;ショート発表 5: 非公開&lt;/h4&gt;
+
+&lt;p&gt;非公開を希望される発表がございました。&lt;/p&gt;
+
+&lt;h4 id="section-9"&gt;ショート発表 6: 非公開&lt;/h4&gt;
+
+&lt;p&gt;非公開を希望される発表がございました。&lt;/p&gt;
+
+&lt;h4 id="ai----1"&gt;招待講演: 「“AI記者” 誕生とその裏側テクノロジー・メディアへの挑戦」 株式会社日本経済新聞社 吉村大希&lt;/h4&gt;
+
+&lt;p&gt;近年の人工知能ブームは新聞社を含む国内外のメディア業界にも影響を与えています。上場企業が発表する決算データの要点を自動で配信する「決算サマリー」というサービスが生まれた経緯や開発の裏側、リリース後社内外の反響などをご紹介します。また、メディアとして記事を主とする資産と人工知能の利点を活用したビジネスや報道現場への応用可能性についてディスカッションできればと思います。&lt;/p&gt;
+
+&lt;h4 id="section-10"&gt;一般発表 2: 「情報科学若手の会の50年」 情報若手の会幹事 小谷 大祐, 岩成 達哉, 黒崎 優太, 高橋 真奈茄&lt;/h4&gt;
+
+&lt;p&gt;情報科学若手の会は今年で50年、50回目を迎えました。その間、様々な方が情報科学若手の会に参加し、議論し、巣立って行かれました。本発表では、毎年の情報科学若手の会の報告の調査をもとに情報科学若手の会が始まったモチベーションや各時代のホットなトピックなど50年を振り返ることを目標に、雑多な話をします。&lt;/p&gt;
+
+&lt;h4 id="javascript---"&gt;一般発表 3: 「JavaScriptの世界へようこそ」 株式会社メルカリ 廣戸 裕大&lt;/h4&gt;
+
+&lt;p&gt;JavaScriptは今やどこにでも使われる言語になっています。ES2015が出てからすでに二年。今回は、JavaScriptの言語仕様がどのように管理されているか、また今後どのようになっていくかについてお話します。JavaScriptを普段書かない人でも今のJavaScript界隈がどのように進んでいるかを説明できればと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://abouthiroppy.github.io/slides/the-present-and-future-of-JavaScript/"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="nix"&gt;ショート発表 7: 「Nixについて」&lt;/h4&gt;
+
+&lt;p&gt;Nixという純粋関数型言語とそれをベースにしたパッケージマネージャ・OS・DevOpsツーリングを紹介します。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://speakerdeck.com/mt_caret/nixnituite"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="ict---3--"&gt;ショート発表 8: 「ICTトラブルシューティングコンテストについて」 電気通信大学 情報理工学部 (3年) 田中 京介&lt;/h4&gt;
+
+&lt;p&gt;ICTトラブルシューティングコンテストの運営委員の勧め、やってきたこと、そして今後の展望&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://hackmd.io/p/H1h4SHBnb#/"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id="ict---"&gt;ショート発表 9: 「第8回ICTトラブルシューティングコンテストの紹介」 電気通信大学情報通信工学部３年 川原 大輝&lt;/h4&gt;
+
+&lt;p&gt;8/26, 27に電気通信大学にて開催された第8回ICTトラブルシューティングコンテストの紹介です。運営学生が用意したインフラで意図的に起こしたトラブルを全国から参加してくる学生が解決し、高得点を取ったチームが優勝する競技になっています。
+参加者にもトラブルを解決してもらいますが、運営学生は準備期間中はもちろんの事、競技時間中も様々なトラブルを解決しながらなんとか開催をしています。そんな一端を発表したいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://hackmd.io/p/H1h4SHBnb#/"&gt;スライド&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="section-11"&gt;10月9日&lt;/h2&gt;
+
+&lt;h4 id="section-12"&gt;一般発表 4: 「地政学リスクを算出する」 京都大学工学部７回生 日置レオナ&lt;/h4&gt;
+
+&lt;p&gt;地政学リスクを数値化する方法および、それを使用した現行サービスジオマーリンについて。２０１６年から米国FRBを中心に地政学リスクを数値化する動きが多くみられ、データサイエンスからの地政学が始まっており、これから発展していくと思われる。この数値化をより精密にしていく３通りのアプローチを発表し、このコンセプトに基づいたサービスであるジオマーリンによって実用例を示したい。&lt;/p&gt;
+
+&lt;h4 id="deploygate-inc--"&gt;一般発表 5: 「秒間たった5アクセスを捌く技術」 DeployGate Inc. 井上 恭輔&lt;/h4&gt;
+
+&lt;p&gt;みなさんのサービスには1秒間にどれだけのアクセスがありますか？計算機が十分に高速で、クラウドサービスの利用により分散化が容易になった現代においては、Webやアプリからの大量のアクセスを捌くことは難しい問題ではなくなりました。しかし、もし処理対象がデジタルなパケットではなく、物理的な「モノ」であった場合はどうでしょう？私達の生きる物理世界に存在する重力や質量、遥かに高いエラーレートへの対応は、実は想像を超えて大変です。
+本発表では幕張メッセで実際に開催された大規模イベントを、様々な技術を使いながら支えた実体験談をご紹介します。&lt;/p&gt;
+
+&lt;h2 id="section-13"&gt;ナイトセッション&lt;/h2&gt;
+
+&lt;p&gt;ナイトセッションでは、発表時間5分のLT発表を行い、10件の発表がありました。 このほかにも多くの飛び込み発表があり、ナイトセッションも大変盛況となりました。&lt;/p&gt;
+
+&lt;h1 id="sns"&gt;SNSでの反応&lt;/h1&gt;
+
+&lt;h2 id="twitter"&gt;Twitter&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://twitter.com/hashtag/wakate2017"&gt;#wakate2017 - Twitter&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id="section-14"&gt;ブログ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://tateishi-18.hatenablog.com/entry/2017/10/09/220636"&gt;tateishi_18さん: 2017年度版　今年も情報科学若手の会に参加してまいりました&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://mt-caret.github.io/blog/posts/2017-10-09-wakate2017.html"&gt;mt_caretさん: 情報科学若手の会2017に参加しました。 #wakate2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://blog.whywrite.it/2017/10/11/50th-jkwktk/"&gt;whywaitaさん: 第50回 情報科学若手の会に参加して発表してきました #wakate2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://abouthiroppy.hatenablog.jp/entry/the-present-and-future-of-JavaScript"&gt;hiroppyさん: JavaScriptの現状と将来というタイトルで発表してきた&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://blog.monora.me/2017/10/participated_50th_wakate/"&gt;きょんたんさん: 第50回 情報科学若手の会に参加しました&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://decobisu.hatenablog.com/entry/2017/10/16/012823"&gt;decobisuさん: 第50回情報科学若手の会いってきた #wakate2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://e10dokup.hateblo.jp/entry/2017/10/16/164032"&gt;どくぴーさん: 第50回 情報科学若手の会に参加してきた #wakate2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://haneuma0628.hatenablog.jp/entry/2017/11/10/192327"&gt;まなてぃさん: 第50回 情報科学若手の会を運営しました&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="section-15"&gt;おわりに&lt;/h1&gt;
+
+&lt;p&gt;参加者全員がいろいろなトピックに触れることができるとともに、異分野の研究者ならではの同分野と異なる視点での議論や新たな可能性についての討論など研究者の視野・研究者同士のつながりを広げることができ、有意義な会合となりました。&lt;/p&gt;
+
+&lt;p&gt;来年度も情報科学若手の会を開催する予定です。下記のWebページにて随時情報を更新しております。 多くの方のご参加をお待ちしております。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://wakate.org"&gt;情報科学若手の会 http://wakate.org&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id="section-16"&gt;謝辞&lt;/h1&gt;
+
+&lt;p&gt;招待講演を快く引き受けてくださいました株式会社日本経済新聞社 吉村 大希様、スポンサーとしてご援助いただきましたさくらインターネット株式会社様、グーグル合同会社様、freee 株式会社様、株式会社オルトプラス様、この若手の会開催にあたり様々な面からご支援くださいました電気通信大学 岩崎先生をはじめとするプログラミングシンポジウム幹事の皆様にこの場をお借りして深く御礼申し上げます。&lt;/p&gt;
+
+&lt;h1 id="section-17"&gt;幹事&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小谷大祐 (京都大学)&lt;/li&gt;
+  &lt;li&gt;岩成達哉 (株式会社リクルートホールディングス, Indeed Tokyo)&lt;/li&gt;
+  &lt;li&gt;大島孝子 (Mercari, Inc.)&lt;/li&gt;
+  &lt;li&gt;黒崎優太 (株式会社サイバーエージェント)&lt;/li&gt;
+  &lt;li&gt;佐々木康汰 (さくらインターネット株式会社)&lt;/li&gt;
+  &lt;li&gt;高橋真奈茄 (九州工業大学)&lt;/li&gt;
+  &lt;li&gt;柳川優子 (お茶の水女子大学)&lt;/li&gt;
+  &lt;li&gt;泉将之(東京大学)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>第50回 情報科学若手の会 参加者・発表者の受付を開始しました[※9/25をもちまして締め切りました]</title>
+    <link rel="alternate" href="http://blog.url.com/2017/07/20/50th-general/"/>
+    <id>http://blog.url.com/2017/07/20/50th-general/</id>
+    <published>2017-07-20T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">
+&lt;h1 id="font-colorred925font"&gt;第50回 情報科学若手の会 参加者・発表者の受付を開始しました &lt;font color="red"&gt;[※9/25をもちまして締め切りました]&lt;/font&gt;&lt;/h1&gt;
+
+&lt;h2 id="section"&gt;情報科学若手の会とは&lt;/h2&gt;
+&lt;p&gt;情報科学若手の会とは、情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会です（&lt;a href="http://wakate.org/2016/09/20/49threport/"&gt;昨年の開催報告&lt;/a&gt;）。 幅広い分野から参加者を募り、互いの交流を深めることで新たな発想が生まれることを目指しています。 インフォーマルな雰囲気ですので、これから研究を始めるという方も是非ご参加下さい。&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;招待講演&lt;/h2&gt;
+
+&lt;h3 id="section-2"&gt;講演者&lt;/h3&gt;
+&lt;p&gt;株式会社日本経済新聞社　吉村大希　様&lt;/p&gt;
+
+&lt;h3 id="section-3"&gt;プロフィール&lt;/h3&gt;
+&lt;p&gt;2013年東京大学大学院新領域創成科学研究科・修士課程修了。地理空間情報に関するビジュアライズの研究を専攻。同年日本経済新聞社入社。データビジュアライゼーション、新規事業などに従事。現在はデジタル事業部門にて英語学習アプリのディレクションと共同研究プロジェクトを担当。&lt;/p&gt;
+
+&lt;h3 id="section-4"&gt;題目&lt;/h3&gt;
+&lt;p&gt;「“AI記者” 誕生とその裏側 テクノロジー・メディアへの挑戦」&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;概要&lt;/h3&gt;
+&lt;p&gt;近年の人工知能ブームは新聞社を含む国内外のメディア業界にも影響を与えています。上場企業が発表する決算データの要点を自動で配信する「決算サマリー」というサービスが生まれた経緯や開発の裏側、リリース後社内外の反響などをご紹介します。また、メディアとして記事を主とする資産と人工知能の利点を活用したビジネスや報道現場への応用可能性についてディスカッションできればと思います。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-6"&gt;開催概要&lt;/h2&gt;
+&lt;p&gt;### 開催日程
+2017年10月7日（土）から9日（月・祝）（2泊3日の合宿形式）&lt;/p&gt;
+
+&lt;p&gt;7日は14時集合（13時30分受付開始）、9日は12時解散を予定しています。
+土日のみ、あるいは日曜のみの参加なども可能です。参加申込みの際に併せてご連絡ください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※ 9月の3連休は研究会や国際会議の締め切りと重なって参加しづらいとの声があり、 今年は時期を変更しました。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id="section-7"&gt;場所&lt;/h3&gt;
+&lt;p&gt;山喜旅館（静岡県伊東市東松原町4番7号）（光回線導入済み！）&lt;/p&gt;
+
+&lt;p&gt;宿泊は男女別の相部屋となります。 建物内は禁煙とします。&lt;/p&gt;
+
+&lt;h3 id="section-8"&gt;募集人数&lt;/h3&gt;
+&lt;p&gt;45名&lt;/p&gt;
+
+&lt;h3 id="twitter"&gt;Twitterのハッシュタグ&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/search?f=tweets&amp;amp;q=%23wakate2017"&gt;#wakate2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-9"&gt;発表形式&lt;/h2&gt;
+
+&lt;h3 id="section-10"&gt;一般発表、ショート発表&lt;/h3&gt;
+&lt;p&gt;発表者の皆様の研究やご興味をお持ちの話題についてご発表いただくものです。ある分野や技術に関するチュートリアルのような発表も歓迎します。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;一般発表: 発表30分 + 質疑応答10分&lt;/li&gt;
+  &lt;li&gt;ショート発表: 発表15分 + 質疑応答10分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;参加者の皆様に何らかの体験をしていただくハンズオンを含む発表も歓迎します。発表時間など調整しますので、発表申し込みの際にその旨をご連絡ください。&lt;/p&gt;
+
+&lt;h3 id="section-11"&gt;ライトニングトーク&lt;/h3&gt;
+&lt;p&gt;発表者の皆様に自由に短い時間（5分間）発表していただくものです。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-12"&gt;参加費（食費・宿泊費込）&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;高校/高専生、学部2年生（未成年）まで: 10,000円&lt;/li&gt;
+  &lt;li&gt;その他学生（成年）: 14,000円&lt;/li&gt;
+  &lt;li&gt;社会人: 24,000円&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;※ 一般/ショート発表に採択された学生には交通費の一部補助を予定しております。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;(1) 複数の参加区分に該当する方は、該当する区分のうち、いずれか金額の高い方を適用させていただきます。
+(2) 一部の日程のみ参加される場合でも参加費の減額はありません。&lt;/p&gt;
+
+&lt;h3 id="section-13"&gt;未成年者の参加者に関する注意事項&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;言うまでもないことではありますが、未成年の参加者への酒類提供は一切致しません。なお、参加費は宴会でのアルコール飲料の代金を差し引いた金額となっております。&lt;/li&gt;
+  &lt;li&gt;未成年の方が参加する場合には、親権者の承諾書を提出して頂く必要があります。 具体的な様式および提出方法については、参加申し込み後に幹事よりご連絡します。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="section-14"&gt;参加費の支払いとキャンセルについて&lt;/h3&gt;
+&lt;p&gt;会場では参加費を受け取りません。参加申し込みを受け付けた後、情報処理学会から請求書、郵便振替用紙、送金連絡票を郵送します。お手数ですが、郵便振替、銀行振込、現金書留などの手段で事前に参加費の払込みを済ませるようお願いいたします。お送りした郵便振替用紙を使って振り込んだ場合、手数料は無料です。それ以外の振込みの場合は、送金連絡票に必要事項を記入して、下記照会先にご連絡ください。海外にお住まいのご参加者様には情報処理学会からメールにて支払いについてのご連絡をいたしますので確認をよろしくお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;照会先:
+情報処理学会 事業部門（第50回情報科学若手の会係）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Phone: 03-3518-8373&lt;/li&gt;
+  &lt;li&gt;Fax: 03-3518-8375&lt;/li&gt;
+  &lt;li&gt;Email: wakate50 [at] ipsj.or.jp&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;振込期限・参加取消期限は、2017年9月22日（金）です。
+参加申込み後やむを得ず参加を取り消される場合は、
+wakate50 [at] ipsj.or.jp まで連絡をお願いします。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;※ 9月22日までに取消しの連絡が無い場合は、参加費の払い戻しはできません。&lt;/strong&gt;
+&lt;strong&gt;また、参加費を振り込まないことにより、自動的に参加取消しにはなりません。&lt;/strong&gt;
+&lt;strong&gt;9月22日までに取消しの連絡が無い場合は、
+連絡の有無にかかわらず参加費をお支払いいただく必要があります。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-15"&gt;参加・発表申込&lt;/h2&gt;
+&lt;!-- 参加を希望される方は、 [第50回 情報科学若手の会 参加申し込みフォーム](https://goo.gl/p9a8jF) より必要事項を記入しお申し込みください。 --&gt;
+
+&lt;!---
+&lt;iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeArUJbewMQ8U-Imwg8WLnESbvq-NGmZ08oYsvhd-OYo-6aqA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;読み込んでいます...&lt;/iframe&gt;
+=--&gt;
+
+&lt;p&gt;&lt;strong&gt;2017年9月25日をもちまして、参加者の申し込みを締め切らせていただきました。多くのお申し込みをいただきありがとうございました。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;発表を希望される方は、発表を希望される方は &lt;a href="https://goo.gl/Qq9p17"&gt;第50回 情報科学若手の会 発表希望記入フォーム&lt;/a&gt; から登録してください &lt;strong&gt;（※ 発表者の方も参加申込みが必要です）&lt;/strong&gt;。
+後日調整の上、発表者を決定いたします。
+なお、ライトニングトークは若手の会の当日も募集いたします。&lt;/p&gt;
+
+&lt;h3 id="section-16"&gt;申込み締め切り&lt;/h3&gt;
+&lt;p&gt;2017年8月31日（木）&lt;font color="red"&gt;→ 2017年9月18日(月) (延長しました)&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;（期日前でも定員になり次第、締切らせていただきます）&lt;/p&gt;
+
+&lt;h3 id="section-17"&gt;個人情報について&lt;/h3&gt;
+&lt;p&gt;ご提供いただいた個人情報は、以下の目的にのみ利用させていただきます。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;情報科学若手の会運営のため&lt;/li&gt;
+  &lt;li&gt;お問い合わせ対応のため&lt;/li&gt;
+  &lt;li&gt;関連情報ご提供のため&lt;/li&gt;
+  &lt;li&gt;統計データとしての利用のため（*1）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;同意を得た場合及び法令に基づく場合などを除いて、個人情報を当該目的以外に利用いたしません。&lt;/p&gt;
+
+&lt;p&gt;*1 こちらは情報科学若手の会の改善や宣伝のために、個人情報が判明しない状態（男女比・年齢分布など）での利用を想定しております&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-18"&gt;主催&lt;/h2&gt;
+&lt;p&gt;一般社団法人 情報処理学会 プログラミングシンポジウム委員会&lt;/p&gt;
+
+&lt;h2 id="section-19"&gt;協賛&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+      &lt;th style="text-align: center"&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="http://www.altplus.co.jp"&gt;&lt;img src="/assets/images/altplus_logo_2017.png" alt="icon1" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="http://www.google.co.jp"&gt;&lt;img src="/assets/images/google_logo_2017.png" alt="icon2" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.sakura.ad.jp/"&gt;&lt;img src="/assets/images/sakura_logo_2017.png" alt="icon3" /&gt;&lt;/a&gt;　&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;　&lt;a href="https://www.freee.co.jp/"&gt;&lt;img src="/assets/images/freee_logo_2017.png" alt="icon4" /&gt;&lt;/a&gt;　&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style="text-align: center"&gt;株式会社オルトプラス 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;グーグル合同会社 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;さくらインターネット株式会社 様（1口）&lt;/td&gt;
+      &lt;td style="text-align: center"&gt;freee 様（1口）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id="section-20"&gt;連絡先&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;参加費の振込や参加申込の取消に関するお問い合わせ: wakate50 [at] ipsj.or.jp&lt;/li&gt;
+  &lt;li&gt;その他（参加申込前のお問い合わせや発表申込など）: info [at] wakate.org&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-21"&gt;情報科学若手の会幹事&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;小谷 大祐（京都大学）&lt;/li&gt;
+  &lt;li&gt;岩成 達哉（株式会社リクルートホールディングス, Indeed Tokyo）&lt;/li&gt;
+  &lt;li&gt;大島 孝子（Mercari, Inc.）&lt;/li&gt;
+  &lt;li&gt;黒崎 優太（株式会社サイバーエージェント）&lt;/li&gt;
+  &lt;li&gt;泉 将之（東京大学）&lt;/li&gt;
+  &lt;li&gt;佐々木 康汰（さくらインターネット株式会社）&lt;/li&gt;
+  &lt;li&gt;高橋 真奈茄（九州工業大学）&lt;/li&gt;
+  &lt;li&gt;柳川 優子（お茶の水女子大学）&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  <entry>
+    <title>第50回情報科学若手の会スポンサー募集のご案内</title>
+    <link rel="alternate" href="http://blog.url.com/2017/06/26/50th-sponsor/"/>
+    <id>http://blog.url.com/2017/06/26/50th-sponsor/</id>
+    <published>2017-06-26T00:00:00+00:00</published>
+    <updated>2018-11-27T06:56:52+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;情報科学若手の会では、第50回情報科学若手の会のスポンサーを募集いたします。
+スポンサーにお申し込みいただける方は、募集要項をお読みいただき、info [at] wakate.org まで必要事項をご連絡ください。&lt;/p&gt;
+
+&lt;h2 id="section"&gt;募集期間&lt;/h2&gt;
+&lt;p&gt;2017年6月26日（月）〜 2017年7月10日（月）&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;募集要項&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;スポンサーにご応募いただくのは、IT業界に関わる企業であることを原則といたします。&lt;/li&gt;
+  &lt;li&gt;1口5万円で、1企業1口まで受付いたします。&lt;/li&gt;
+  &lt;li&gt;情報科学若手の会は情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会を目指しておりますので、この趣旨に合わないと考えられる場合は、幹事で検討の上、お断りさせていただくことがございます。ご了承ください。&lt;/li&gt;
+  &lt;li&gt;多くのお申し出をいただいた場合、締め切りを繰り上げる場合があります。&lt;/li&gt;
+  &lt;li&gt;そのほかご質問等ございましたら、info [at] wakate.org までご連絡ください。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-2"&gt;特典&lt;/h2&gt;
+&lt;p&gt;スポンサーになっていただいた場合、以下の特典があります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;情報科学若手の会の公式Webサイトの第50回の参加者募集記事に企業のロゴを掲載すること&lt;/li&gt;
+  &lt;li&gt;今回参加者に配布するパンフレットに企業のロゴを掲載すること&lt;/li&gt;
+  &lt;li&gt;企業から1名無料で第50回情報科学若手の会にご参加いただくこと（情報科学若手の会の趣旨に合う方のご参加を特に歓迎いたします）&lt;/li&gt;
+  &lt;li&gt;ご発表を行っていただくこと（情報科学若手の会の趣旨から外れないものに限ります）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="section-3"&gt;お申し込み方法&lt;/h2&gt;
+&lt;p&gt;以下の項目を info [at] wakate.org にご連絡ください。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;スポンサー企業名&lt;/li&gt;
+  &lt;li&gt;ご担当者様の氏名・部署名・メールアドレス・電話番号&lt;/li&gt;
+  &lt;li&gt;掲載企業名（Webページやパンフレットに掲載する際に利用いたします）&lt;/li&gt;
+  &lt;li&gt;ロゴ画像 （210x120 のサイズに収まるように加工してWebページへ掲載いたします）&lt;/li&gt;
+  &lt;li&gt;URL（1つのみ）（ロゴ画像にリンクします）&lt;/li&gt;
+  &lt;li&gt;ご参加くださる方のお名前、ご連絡先メールアドレス、電話番号・性別&lt;/li&gt;
+  &lt;li&gt;ご発表の有無（タイトルや概要の締め切りは別途設定いたしますが、幹事で検討する上でどのような発表を予定されているのかをお申し込み後に伺うことがあります。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;情報科学若手の会の詳細は &lt;a href="http://wakate.org/"&gt;http://wakate.org/&lt;/a&gt; に掲載しております。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id="section-4"&gt;第50回情報科学若手の会について&lt;/h2&gt;
+
+&lt;p&gt;情報科学若手の会は、情報科学に携わる学生、若手研究者、社会人のディスカッションと交流の会です。&lt;br /&gt;
+幅広い分野から参加者を募り、互いの交流を深めることで新たな発想が生まれることを目指しています。&lt;br /&gt;
+今回は、株式会社日本経済新聞社 吉村大希様による「"AI記者" 誕生とその裏側 テクノロジー・メディアへの挑戦」と題した招待講演と、参加者の皆様による幅広い分野に関する発表を予定しております。&lt;/p&gt;
+
+&lt;h3 id="section-5"&gt;日程&lt;/h3&gt;
+&lt;p&gt;2017年10月7日（土）- 9日（月・祝）（2泊3日の合宿形式）&lt;/p&gt;
+
+&lt;h3 id="section-6"&gt;場所&lt;/h3&gt;
+&lt;p&gt;山喜旅館（静岡県伊東市東松原町4番7号）&lt;/p&gt;
+
+&lt;h3 id="section-7"&gt;主催&lt;/h3&gt;
+&lt;p&gt;一般社団法人 情報処理学会 プログラミングシンポジウム委員会&lt;/p&gt;
+
+&lt;p&gt;過去の開催報告を情報科学若手の会のWebサイト（&lt;a href="http://wakate.org/tags/開催報告/"&gt;http://wakate.org/tags/開催報告/&lt;/a&gt;）に掲載していますので、ぜひご覧ください。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
