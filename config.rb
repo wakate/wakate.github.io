@@ -1,6 +1,6 @@
 require 'json'
 
-config = JSON.parse(open('./config.json').read)
+js_config = JSON.parse(File.read('./config.json'))
 
 ###
 # Page options, layouts, aliases and proxies
@@ -32,7 +32,7 @@ activate :directory_indexes
 activate :external_pipeline,
   name: :gulp,
   command: "$(npm bin)/gulp #{build? ? :build : :watch}",
-  source: config['dest'],
+  source: js_config['dest'],
   latency: 1
 
 activate :blog do |blog|
@@ -80,14 +80,12 @@ page "/feed.xml", layout: false
 
 # Build-specific configuration
 configure :build do
+  # prevent middleman renderer to compile scss (because they're compiled by gulp)
+  ignore "/assets/styles/style"
+
   # Minify CSS on build
   activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
-
-  # TODO: styleguilde系のファイルが残っててつらい
-  ignore "/styleguide/**/*"
-  ignore "/assets/styleguide-template/**/*"
-  ignore "/assets/styles/**/*"
 end
