@@ -1,36 +1,21 @@
-import gulp         from "gulp";
-import loadPlugins  from "gulp-load-plugins";
+import gulp from "gulp";
+import gulpLoadPlugins from 'gulp-load-plugins';
+import del from "del";
+import path from "path";
+import browserSync from 'browser-sync';
 
-import del          from "del";
-import path         from "path";
-import browserSync  from "browser-sync";
-import kss          from "kss";
+import config from "./config";
 
-import config       from "./config";
-
-const $             = loadPlugins();
-const reload        = browserSync.reload;
-
+const server = browserSync.create();
+const $ = gulpLoadPlugins();
 
 // ---- configurations ------------------------------------------------
-const p             = path.join;
-const src           = path.join(__dirname, "source");
-const dest          = path.join(__dirname, config.dest);
-const buildDir      = path.join(__dirname, config.build);
-const styleEntries  = config.src.styles.entries;
-const stylesPath    = path.join.bind(__dirname, config.src.styles.dir);
-const styleFiles    = styleEntries.map(file => stylesPath(file));
-const styleIncludePaths   = config.src.styles["include-paths"]
-const styleguideTemplate  = path.join(__dirname, config.src["styleguide-template"].dir)
-const fontPaths     = config.src.fonts.dirs.map(file => path.join(__dirname, file));
-
-const kssOpts = {
-  source:       stylesPath(),
-  destination:  `${dest}/styleguide`,
-  mask:         '"*.scss"',
-  template:     styleguideTemplate,
-  css:          styleEntries.map((entry) => `/${entry.replace(/\.scss$/, ".css")}`)
-};
+const dest              = config.dest;
+const buildDir          = config.build;
+const styleEntries      = config.src.styles.entries;
+const stylesPath        = path.join(config.src.styles.dir, "**/*.scss");
+const styleIncludePaths = config.src.styles.include_paths;
+const fontPaths         = config.src.fonts.dirs;
 
 const deployOpts = {
   branch: "master"
@@ -39,21 +24,14 @@ const deployOpts = {
 
 // ---- styles ------------------------------------------------
 gulp.task("lint:scss", () => {
-  return gulp.src(stylesPath("**/*.scss"))
+  return gulp.src(stylesPath)
     .pipe($.sassLint())
     .pipe($.sassLint.format())
     .pipe($.sassLint.failOnError())
 });
 
-gulp.task("build:styleguide", $.shell.task([
-  `\$(npm bin)/kss-node <%= opts %>`
-], {
-  templateData: {
-    opts: Object.keys(kssOpts).map((k) => `--${k} ${kssOpts[k]}`).join(" ")
-  }
-}));
-
 gulp.task("build:scss", () => {
+  const styleFiles = styleEntries.map(file => path.join(config.src.styles.dir, file));
   return gulp.src(styleFiles)
     .pipe($.plumber({
       errorHandler: function(e) {
@@ -79,18 +57,30 @@ gulp.task("copy:fonts", () => {
 
 
 // ---- build ------------------------------------------------
-gulp.task("watch", () => {
-  browserSync.init({
+
+// ref: https://github.com/gulpjs/gulp/blob/master/docs/recipes/minimal-browsersync-setup-with-gulp4.md
+function reload(done) {
+  server.reload();
+  done();
+}
+
+function serve(done) {
+  server.init({
     open: false,
     proxy: "localhost:4567",
     reloadDelay: 2000
   });
+  done();
+}
 
-  gulp.watch([stylesPath("**/*.scss")], ["build:scss", "build:styleguide"]);
-  gulp.watch([path.join(src, "**/*")], reload);
-});
+const watch = () => {
+  gulp.watch(stylesPath, gulp.task("build:scss"));
+  gulp.watch("source/**/*", gulp.task(reload));
+};
 
-gulp.task("build", ["build:scss", "build:styleguide", "copy:fonts"]);
+gulp.task("watch", gulp.series(serve, watch));
+
+gulp.task("build", gulp.series("build:scss", "copy:fonts"));
 
 gulp.task("deploy", () => {
   return gulp.src(path.join(buildDir, "**/*"))

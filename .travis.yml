@@ -1,16 +1,25 @@
 language: node_js
 node_js:
-- "5.10.1"
+- "7.4.0"
 sudo: false
 cache:
   directories:
   - node_modules
   - vendor/bundle
+  - /home/travis/.rvm
+  - /home/travis/.nvm
 before_install:
+- nvm install 12.4.0
+- nvm use 12.4.0
+- npm install -g yarn
 - rvm install 2.6.3
 - rvm use 2.6.3
 - gem install bundler
+install:
+- yarn
 - bundle install --path vendor/bundle
+script:
+- rvm 2.6.3 do bundle exec middleman build
 deploy:
   skip_cleanup: true
   provider: script
