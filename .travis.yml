@@ -6,8 +6,11 @@ cache:
   directories:
   - node_modules
   - vendor/bundle
-  - /home/travis/.rvm/
+  - /home/travis/.rvm
+  - /home/travis/.nvm
 before_install:
+- nvm install 12.4.0
+- nvm use 12.4.0
 - rvm install 2.6.3
 - rvm use 2.6.3
 - npm install -g yarn
