@@ -17,10 +17,11 @@ git config --global user.email $GIT_EMAIL
 git config --global credential.helper store
 echo "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
 
-gem install bundler
-bundle install
+# gem install bundler
+# bundle install
 
-bundle exec middleman build
+# bundle exec middleman build
+
 bundle exec middleman deploy
 
 rm ~/.git-credentials
