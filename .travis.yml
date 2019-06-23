@@ -14,7 +14,7 @@ install:
 - gem install bundler
 - bundle install --path vendor/bundle
 script:
-- rvm 2.6.3 do bundle exec middleman build
+- rvm 2.6.3 do bundle exec middleman --verbose build
 deploy:
   skip_cleanup: true
   provider: script
