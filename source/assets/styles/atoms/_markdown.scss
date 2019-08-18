@@ -81,6 +81,10 @@
   list-style: none;
   padding: 0;
 
+  ul {
+    padding: 0 0 0 2em;
+  }
+
   > li {
     @include before-text('-', .5rem, $decoration-color);
   }
