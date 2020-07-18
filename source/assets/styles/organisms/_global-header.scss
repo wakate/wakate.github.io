@@ -13,3 +13,18 @@
     }
   }
 }
+
+.nav-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  nav {
+    display: flex;
+
+    @include container
+
+    > div {
+      margin-left: 1rem;
+      font-size: $font-size-lg;
+    }
+  }
+}
