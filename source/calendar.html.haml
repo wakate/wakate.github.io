@@ -2,7 +2,7 @@
 pageable: true
 ---
 = partial "partials/narrow-header"
-#main(role="main")
+%main
   :ruby
     pages = []
     if ['year', 'month', 'day'].include?(page_type)

@@ -3,7 +3,7 @@ pageable: true
 per_page: 12
 ---
 = partial "partials/narrow-header"
-#main(role="main")
+%main
   - pages = [{ name: tagname, url: tag_path(tagname) }]
   = partial "partials/breadcrumbs", locals: { pages: pages }
   = partial "partials/posts", locals: { articles: page_articles }
