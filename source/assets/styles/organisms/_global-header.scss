@@ -25,6 +25,11 @@
     > div {
       margin-left: 1rem;
       font-size: $font-size-lg;
+
+      &.spacer {
+        color: white;
+        pointer-events: none;
+      }
     }
   }
 }
