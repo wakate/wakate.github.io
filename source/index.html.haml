@@ -5,7 +5,7 @@ per_page: 10
 
 .jumbotron
   %h1
-    %a(href="//wakate.org")
+    %a(href="/")
       = image_tag "logo-light-vertical.png", alt: "情報科学若手の会"
   %p.lead
     情報科学若手の会は、情報科学に携わる学生、若手研究者、 社会人のディスカッションと交流の会です。
@@ -15,9 +15,10 @@ per_page: 10
     インフォーマルな雰囲気ですので、これから研究を始めるという方も是非ご参加下さい。
     %br
     情報科学若手の会についての詳細は、
-    %a(href="//wakate.org/about")こちら
+    %a(href="/about")こちら
     をご覧ください。
 
-#main(role="main")
+  = partial "partials/global-navigation"
+%main
   = partial "partials/posts", locals: { articles: page_articles }
   = partial "partials/pagination"

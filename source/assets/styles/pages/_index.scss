@@ -2,7 +2,7 @@
   background: url('./assets/images/bg-top.png') no-repeat;
   background-size: cover;
   margin-bottom: 32px;
-  padding: 120px 0 240px;
+  padding: 120px 0 0;
   box-shadow: $default-shadow;
 
   h1 { margin: 0; }
@@ -20,11 +20,17 @@
     letter-spacing: 2px;
     line-height: 2.5;
   }
+
+  nav {
+    margin-top: 240px;
+
+    @include container
+  }
 }
 
 @media (max-width: map-get($container-max-widths, sm)) {
   .jumbotron {
-    padding: 120px 0 60px;
+    padding: 120px 0 0;
 
     img { max-width: 240px; }
 
@@ -32,6 +38,12 @@
       margin: 40px 20px 0;
       line-height: 2;
     }
+  }
+
+  nav {
+    margin-top: 60px;
+
+    @include container
   }
 }
 
