@@ -11,12 +11,11 @@ cache:
 before_install:
 - nvm install 12.4.0
 - nvm use 12.4.0
-- npm install -g yarn
 - rvm install 2.6.3
 - rvm use 2.6.3
 - gem install bundler
 install:
-- yarn
+- npm install
 - bundle install --path vendor/bundle
 script:
 - rvm 2.6.3 do bundle exec middleman build
