@@ -1,4 +1,14 @@
 # wakate.org
+
+## Enviroment
+
+This tools are required.
+
+- Ruby 2.7.x
+- nvm 8 (verification required)
+
+If errors are displayed when you install Ruby 2.x with rbenv on Ubuntu 22.04 (LTS), please check [this site](https://github.com/rbenv/ruby-build/discussions/1940) 
+
 ## Getting started
 1. Clone this repository: `git clone git@github.com:wakate/wakate.github.io.git`
 2. Install rubygems: `bundle install`
