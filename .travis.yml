@@ -19,6 +19,11 @@ install:
 - bundle install --path vendor/bundle
 script:
 - rvm 2.6.3 do bundle exec middleman build
+before_deploy:
+  - git config --local user.name "wakate"
+  - git config --local user.email "info@wakate.org"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
 deploy:
   provider: releases
   api_key:
