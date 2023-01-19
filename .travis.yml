@@ -24,11 +24,12 @@ before_deploy:
   - git config --local user.email "info@wakate.org"
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
   - git tag $TRAVIS_TAG
+  - zip -r build.zip build
 deploy:
   provider: releases
   api_key:
     secure: fSiQMQuQ1yN8SxElvm7SCIL7v/Y2bWO1BIXMm1g0UGPxmUJVo/UvgsEu6yOUJPDIXghvZY5XKXdamvOqL2H6L1wRYPwy8ZUvGn4eA9v31dGhMjex5XC7QHjhJ+rFo+MASsMSQaLzU1hdWlwaRfEp9B5WBICcIhE4qE2SlckL9vWm3aUUWMkhhcP1uXx8N1Ae3ayA8TMFIpwF+3b9kowkwj5iFE9UwiLyEuUFrnqDCvOxtmRoeIzdyPUeTOpyvExmqKyQXxggvdd4ONYZ6YExkkis0yANMbtflF8K+tBgsF51wcKrRkgetB590cL415keclytImPD2yIAZKbWMtFjXqW9kmvcc/hLPoOLFcLWm4LeTPKeHWdi1l9CP+A6Wf7GIXwLdKCE3CJuXSAw/3rJ/OtSPvrQShukr+dk+TN9pxkqnoNS6RiWtLUuVEwNpWZUEd2QTt0CyAwppDE5S+2qg/jDeCeavfBSMFAbc5Ur8f2BU523TSEFl1fYNjCY4+DDj9KkeMklTJUmPqtTdX0Ng67WD48xff99ulhOaflp0/V8F59VJNdrbHioxXDdAT+hxGP2ZpNwcu07+e1TDVPr8t5lZIu69nxbQPuahyk7fjd/XLx3xBIwINwgol93f01QhJLaupnxs/1EPgH1YhCFuuJ77DqiGJNNwaiqqJX2P8M=
-  file: build
+  file: build.zip
   on:
     repo: wakate/wakate.github.io
     branch: source
