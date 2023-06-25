@@ -9,7 +9,17 @@
 @import "./headers/scaffolding";
 @import "./headers/type";
 
-@import "./atoms/**/*";
-@import "./molecules/**/*";
-@import "./organisms/**/*";
-@import "./pages/**/*";
+@import "./atoms/card";
+@import "./atoms/container";
+@import "./atoms/markdown";
+@import "./atoms/post-title";
+
+@import "./molecules/pagination";
+@import "./molecules/post-header";
+
+@import "./organisms/global-header";
+@import "./organisms/global-footer";
+@import "./organisms/post";
+@import "./organisms/sub-contents";
+
+@import "./pages/index";

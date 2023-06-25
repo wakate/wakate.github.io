@@ -5,7 +5,7 @@
 This tools are required.
 
 - Ruby 2.7.x
-- nvm 8 (verification required)
+- Node.js 12 or later
 
 If errors are displayed when you install Ruby 2.x with rbenv on Ubuntu 22.04 (LTS), please check [this site](https://github.com/rbenv/ruby-build/discussions/1940) 
 

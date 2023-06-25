@@ -3,11 +3,14 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import del from "del";
 import path from "path";
 import browserSync from 'browser-sync';
+import gulpSass from 'gulp-sass';
+import dartSass from 'sass';
 
 import config from "./config";
 
 const server = browserSync.create();
 const $ = gulpLoadPlugins();
+const sass = gulpSass(dartSass);
 
 // ---- configurations ------------------------------------------------
 const dest              = config.dest;
@@ -39,8 +42,7 @@ gulp.task("build:scss", () => {
         this.emit('end');
       }
     }))
-    .pipe($.sassGlob())
-    .pipe($.sass({includePaths: styleIncludePaths}))
+    .pipe(sass({includePaths: styleIncludePaths}))
     .pipe(gulp.dest(dest));
 });
 
