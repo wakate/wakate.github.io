@@ -20,7 +20,7 @@
   nav {
     display: flex;
 
-    @include container
+    @include container;
 
     > div {
       margin-left: 1rem;
