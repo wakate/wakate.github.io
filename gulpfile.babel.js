@@ -76,7 +76,7 @@ function serve(done) {
 }
 
 const watch = () => {
-  gulp.watch(stylesPath, gulp.task("build:scss"));
+  gulp.watch(stylesPath, { ignoreInitial: false }, gulp.task("build:scss"));
   gulp.watch("source/**/*", gulp.task(reload));
 };
 
