@@ -31,7 +31,7 @@ activate :directory_indexes
 
 activate :external_pipeline,
   name: :gulp,
-  command: "$(npm bin)/gulp #{build? ? :build : :watch}",
+  command: "./node_modules/.bin/gulp #{build? ? :build : :watch}",
   source: js_config['dest'],
   latency: 1
 
