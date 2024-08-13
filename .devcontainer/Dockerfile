@@ -1,18 +1,13 @@
-FROM ruby:2.7-bullseye
+# [Choice] Ruby version (use -bullseye variants on local arm64/Apple Silicon): 3, 3.1, 3.0, 2, 2.7, 3-bullseye, 3.1-bullseye, 3.0-bullseye, 2-bullseye, 2.7-bullseye, 3-buster, 3.1-buster, 3.0-buster, 2-buster, 2.7-buster
+ARG VARIANT=2-bullseye
+FROM mcr.microsoft.com/vscode/devcontainers/ruby:${VARIANT}
 
-RUN apt-get update -qq && \
-    apt-get install -y build-essential libxslt-dev libxml2-dev cmake && \
-    apt-get install -y nodejs npm && \
-    npm install n -g && \
-    n 16.13.0 && \
-    apt-get purge -y nodejs npm && \
-    apt-get autoremove -y && \
-    apt-get clean -y && \
-    rm -rf /var/lib/apt/lists/*
+# [Choice] Node.js version: none, lts/*, 16, 14, 12, 10
+ARG NODE_VERSION="none"
+RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
-ENV APP_ROOT /{name}
-RUN mkdir -p $APP_ROOT
+# [Optional] Uncomment this line to install additional gems.
+# RUN gem install <your-gem-names-here>
 
-WORKDIR $APP_ROOT
-
-ADD . $APP_ROOT
+# [Optional] Uncomment this line to install global node packages.
+# RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
